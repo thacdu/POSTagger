@@ -1,0 +1,30 @@
+to_sụ {A}
+vang {V N}
+cơ_ngơi {N}
+lộp_độp {A}
+thức_ăn {N}
+lượt {Nu N}
+lại {R V}
+máy_xúc {N}
+lượm {Nc V}
+đôi_khi {R}
+lượn {V Nc N}
+lược {V N}
+nuôi_béo {V}
+não_lòng {A}
+nhoè_nhoẹt {A}
+no {A}
+tôi {P V N}
+ăn {A V}
+cơm {A N}
+nóng_sốt {A}
+điếm_canh {N}
+thế {I P V N}
+khói_hương {N}
+kê_úm {V}
+ậm_ừ {V}
+đại_lễ_đường {N}
+nhàu {A}
+lốm_đốm {A}
+nhiều {A}
+hơn {A}
