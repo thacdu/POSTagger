@@ -53,10 +53,10 @@ public class MatrixGenerator {
 		    	double a = result.get(l[j] + " " + tags[k]) * getFreq(l[j]) + 1;
 		        double b = 0.0;
 		        for (int index = 0; index < l.length; index++) {
-		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + tags.length;       
+		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + lexicon.get(l[index]).split(" ").length;       
 		        }
 		        result.put(l[j] + " " + tags[k], a / b);
-//		        System.out.println(tags[k] + " " + a/b);
+		        //System.out.println(tags[k] + " " + a/b);
 		    }
 		    //System.out.println();
 		}

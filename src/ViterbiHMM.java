@@ -19,6 +19,11 @@ public class ViterbiHMM{
     	MatrixGenerator gen = new MatrixGenerator(lexicon, corpus, tagSet);
     	this.hiddenAlphabet = tagSet.split(" ");
     	this.observableAlphabet = obsA.split(" ");
+    	
+    	System.out.print("OBS : ");
+    	for(int i = 0; i < observableAlphabet.length; i++)
+    		System.out.print(observableAlphabet[i] + " ");
+    	System.out.println();
         this.lexicon = lexicon;
         this.A = gen.createMatrixA(0.01);
         this.B = gen.createMatrixB();
@@ -40,10 +45,15 @@ public class ViterbiHMM{
         return getResult();
     }
     
+    private int positionOfStartTag(){
+    	return getTagIndex(".");
+    }
+    
     private void init() {
         delta = new double[hiddenAlphabet.length][observation.length];
-        //System.out.println(delta.length + " " + delta[0].length );
-        delta[delta.length - 1][0] = 1.0;
+        int posOfStart = positionOfStartTag(); 
+        
+        delta[posOfStart][0] = 1.0;
         psi = new int[hiddenAlphabet.length][observation.length - 1];
         for (int i = 0; i < psi.length; i++) {
             Arrays.fill(psi[i], -1);
@@ -52,22 +62,32 @@ public class ViterbiHMM{
     
     private void induct() {
         for (int i = 1; i < observation.length; i++) {
-        	String[] tags = lexicon.get(observation[i]).split(" ");
+        	
+        	String obs = observation[i];
+        	System.out.println(obs);
+        	String[] tags;
+        	
+        	String resTag = lexicon.get(obs);
+        	if(resTag != null) tags = resTag.split(" ");
+        	else{
+        		obs = observableAlphabet[observableAlphabet.length - 1];
+        		tags = lexicon.get(obs).split(" ");
+        	}
         	
             for (int j = 0; j < tags.length; j++) {
                 int prevIndex = ViterbiMatrixTools.indexOfMaximimumForCol(
                         i - 1, delta);
                 
-                double emisValue = getEmisValue(observation[i] + " " + tags[j]);
-                //if(lexIndex == -1){
-                	//lexIndex = observableAlphabet.length-1;
-                //}
+                double emisValue = getEmisValue(obs + " " + tags[j]);
+                
                 int tagIndex = getTagIndex(tags[j]);
                 //double res = delta[prevIndex][i-1] * B.get(observation[lexIndex] + " " + hiddenAlphabet[j]) * A[prevIndex][j];
                 double res = delta[prevIndex][i-1] * emisValue * A[prevIndex][tagIndex];
-                delta[tagIndex][i] = res;
-                if (res > 0.0)
+                //delta[tagIndex][i] = res;
+                if (res > delta[tagIndex][i]){
+                	delta[tagIndex][i] = res;
                     psi[tagIndex][i - 1] = prevIndex;
+                }
             }
 
         }
@@ -98,15 +118,16 @@ public class ViterbiHMM{
         return resultString.toString();
     }
     
-    double getEmisValue(String string) {
+    private double getEmisValue(String string) {
         if (B.get(string) == null){
         	String alter = observableAlphabet[observableAlphabet.length - 1];
+        	System.out.println(alter);
         	return B.get(alter);
         }
         return B.get(string);
     }
     
-    int getTagIndex(String string){
+    private int getTagIndex(String string){
     	for(int i = 0; i < hiddenAlphabet.length; i++)
     		if(hiddenAlphabet[i].contains(string)) return i;
     	return 0;

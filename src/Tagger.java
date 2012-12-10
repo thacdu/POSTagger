@@ -10,7 +10,8 @@ public class Tagger {
 	String lexiconString;
 	
 	private void readLexicon(){
-		FileInteraction file = new FileInteraction("Dict-UTF8 -1.txt");
+		lexiconString = "";
+		FileInteraction file = new FileInteraction("Dict-UTF8.txt");
 		try{
 			file.openInputFile();
 			
@@ -23,6 +24,7 @@ public class Tagger {
 				tag = tag.concat(res[res.length - 1]);
 				
 				lexicon.put(res[0], tag);
+				lexiconString = lexiconString + " " + res[0];
 			}
 			
 			file.closeInputFile();
@@ -59,7 +61,6 @@ public class Tagger {
 	        lexBuf.append(word + " ");
 	    }
 	    
-	    lexiconString = lexBuf.toString();
 	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu . , ...";
 	}
 
@@ -81,7 +82,6 @@ public class Tagger {
 	    	
 	    	while(tagFile.hasNext()){
 			    String input = tagFile.readLine();
-			    //System.out.print(input);
 			    String[] word = input.split(" ");
 			    String[] tag = hmm.mostProbableSequence(input).split(" ");
 			    
