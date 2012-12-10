@@ -1,1 +1,1 @@
-tôi/N ăn/V nhiều/A thức_ăn/N hơn/A cơm/N ./. đôi_khi/R ăn/V thế/I lại/V no/A hơn/A ăn/V cơm/N ./. 
+tôi/V ăn/V nhiều/A thức_ăn/Nc hơn/A cơm/A ./. đôi_khi/R ăn/V thế/I lại/V no/A hơn/A ăn/V cơm/A ./. 

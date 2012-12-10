@@ -10,7 +10,7 @@ public class Tagger {
 	String lexiconString;
 	
 	private void readLexicon(){
-		FileInteraction file = new FileInteraction("Dict-UTF8.txt");
+		FileInteraction file = new FileInteraction("Dict-UTF8 -1.txt");
 		try{
 			file.openInputFile();
 			

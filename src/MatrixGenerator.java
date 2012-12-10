@@ -8,7 +8,6 @@ public class MatrixGenerator {
 	private Map<String, String> lexicon;
 	private Map<String, Integer> freq;
 	private String corpus;
-	private double[][] result;
 	private String tagset;
 	//private String[] tagSet;
 	
@@ -26,33 +25,42 @@ public class MatrixGenerator {
 		printMap(freq);
 	}
 	
-	public double[][] createMatrixB() {
-		String[] t = tagset.split(" ");
+	private double getValue(String string, HashMap<String, Double> map){
+		if (map.get(string) == null) return 0.0;
+		return map.get(string);
+	}
+	
+	public HashMap<String, Double> createMatrixB() {
+		//String[] t = tagset.split(" ");
 		String[] l = lexicon.keySet().toArray(new String[0]);
 		
-		result = new double[l.length][t.length];
-		for (int j = 0; j < result.length; j++) {
-		    Arrays.fill(result[j], 0.0);
-		    for (int k = 0; k < result[j].length; k++) {
-		        String categories = lexicon.get(l[j]);
-		        if (categories.contains(t[k])) {
-		            result[j][k] = 1.0 / categories.split(" ").length;
-		        }
-		    }
+		HashMap<String, Double> result = new HashMap<String, Double>();
+		for (int j = 0; j < l.length; j++) {
+		    //Arrays.fill(result[j], 0.0);
+	        String[] tags = lexicon.get(l[j]).split(" ");
+	        double value = 1.0 / tags.length;
+	        
+	        for(int k = 0; k < tags.length; k++){
+	        	result.put(l[j] + " " + tags[k], value);
+	        }
 		}
 		
-		for (int j = 0; j < result.length; j++) {
-		    for (int k = 0; k < result[j].length; k++) {
-		    	double a = result[j][k] * getFreq(l[j]) + 1;
+		for (int j = 0; j < l.length; j++) {
+			//System.out.print(l[j] + " ");
+			String[] tags = lexicon.get(l[j]).split(" ");
+			
+		    for (int k = 0; k < tags.length; k++) {
+		    	double a = result.get(l[j] + " " + tags[k]) * getFreq(l[j]) + 1;
 		        double b = 0.0;
-		        for (int index = 0; index < result.length; index++) {
-		            b += result[index][k] * getFreq(l[index]) + t.length;       
+		        for (int index = 0; index < l.length; index++) {
+		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + tags.length;       
 		        }
-		        //if(b != 0.0)
-		        result[j][k] = a / b;
-		        //else result[j][k] = 0.0000005;
+		        result.put(l[j] + " " + tags[k], a / b);
+//		        System.out.println(tags[k] + " " + a/b);
 		    }
+		    //System.out.println();
 		}
+		
 		return result;
 	}
 	
@@ -89,6 +97,7 @@ public class MatrixGenerator {
 	            }
 	        }
 	    }
+	    ViterbiMatrixTools.printMatrix(res);
 	    return res;
 	}
 	
