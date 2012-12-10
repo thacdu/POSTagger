@@ -55,6 +55,9 @@ public class ViterbiHMM{
                         i - 1, delta);
                 
                 int lexIndex = getIndex(observation[i], observableAlphabet);
+                if(lexIndex == -1){
+                	lexIndex = observableAlphabet.length-1;
+                }
                 
                 double res = delta[prevIndex][i-1] * B[lexIndex][j] * A[prevIndex][j];
                 delta[j][i] = res;
@@ -96,8 +99,6 @@ public class ViterbiHMM{
             if (string.equals(lexicon[i]))
                 return i;
         }
-        System.out.println("Word '" + string + "' not found in lexicon, exit.");
-        System.exit(0);
         return -1;
     }
 }

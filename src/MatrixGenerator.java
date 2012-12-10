@@ -10,6 +10,8 @@ public class MatrixGenerator {
 	private String corpus;
 	private double[][] result;
 	private String tagset;
+	//private String[] tagSet;
+	
 	public MatrixGenerator(Map<String, String> lexicon, String corpus, String tagset) {
 		this.corpus = corpus;
 		this.lexicon = lexicon;
@@ -41,21 +43,16 @@ public class MatrixGenerator {
 		
 		for (int j = 0; j < result.length; j++) {
 		    for (int k = 0; k < result[j].length; k++) {
-		        //double a = result[j][k] * freq.get(l[j]);
-		    	double a = result[j][k] * getFreq(l[j]);
+		    	double a = result[j][k] * getFreq(l[j]) + 1;
 		        double b = 0.0;
 		        for (int index = 0; index < result.length; index++) {
-		            b += result[index][k] * getFreq(l[index]); //freq.get(l[index]);       
+		            b += result[index][k] * getFreq(l[index]) + t.length;       
 		        }
-		        if(b != 0.0) result[j][k] = a / b;
-		        else result[j][k] = 0.0;
+		        //if(b != 0.0)
+		        result[j][k] = a / b;
+		        //else result[j][k] = 0.0000005;
 		    }
 		}
-		System.out.println();
-		System.out
-		        .println("Matrix B (word-tag, lexicon and tags ordered as printed above, learned from corpus):");
-		ViterbiMatrixTools.printMatrix(result);
-		System.out.println(result.length + " " + result[0].length);
 		return result;
 	}
 	
@@ -92,10 +89,6 @@ public class MatrixGenerator {
 	            }
 	        }
 	    }
-	    System.out.println();
-	    System.out.println("Matrix A (tag-tag, pseudo-random-generated):");
-	    ViterbiMatrixTools.printMatrix(res);
-	    System.out.println();
 	    return res;
 	}
 	

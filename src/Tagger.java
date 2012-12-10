@@ -60,7 +60,7 @@ public class Tagger {
 	    }
 	    
 	    lexiconString = lexBuf.toString();
-	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu .";
+	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu . , ...";
 	}
 
 	

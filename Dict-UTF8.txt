@@ -28,3 +28,4 @@ nhàu {A}
 lốm_đốm {A}
 nhiều {A}
 hơn {A}
+dhds {A V N E P}
