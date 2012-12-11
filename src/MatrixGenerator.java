@@ -5,13 +5,13 @@ import java.util.Random;
 import java.util.StringTokenizer;
 
 public class MatrixGenerator {
-	private Map<String, String> lexicon;
+	private Map<String, String[]> lexicon;
 	private Map<String, Integer> freq;
 	private String corpus;
 	private String tagset;
 	//private String[] tagSet;
 	
-	public MatrixGenerator(Map<String, String> lexicon, String corpus, String tagset) {
+	public MatrixGenerator(Map<String, String[]> lexicon, String corpus, String tagset) {
 		this.corpus = corpus;
 		this.lexicon = lexicon;
 		this.tagset = tagset;
@@ -31,13 +31,12 @@ public class MatrixGenerator {
 	}
 	
 	public HashMap<String, Double> createMatrixB() {
-		//String[] t = tagset.split(" ");
 		String[] l = lexicon.keySet().toArray(new String[0]);
 		
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		for (int j = 0; j < l.length; j++) {
 		    //Arrays.fill(result[j], 0.0);
-	        String[] tags = lexicon.get(l[j]).split(" ");
+	        String[] tags = lexicon.get(l[j]);
 	        double value = 1.0 / tags.length;
 	        
 	        for(int k = 0; k < tags.length; k++){
@@ -47,13 +46,13 @@ public class MatrixGenerator {
 		
 		for (int j = 0; j < l.length; j++) {
 			//System.out.print(l[j] + " ");
-			String[] tags = lexicon.get(l[j]).split(" ");
+			String[] tags = lexicon.get(l[j]);
 			
 		    for (int k = 0; k < tags.length; k++) {
 		    	double a = result.get(l[j] + " " + tags[k]) * getFreq(l[j]) + 1;
 		        double b = 0.0;
 		        for (int index = 0; index < l.length; index++) {
-		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + lexicon.get(l[index]).split(" ").length;       
+		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + lexicon.get(l[index]).length;       
 		        }
 		        result.put(l[j] + " " + tags[k], a / b);
 		        //System.out.println(tags[k] + " " + a/b);

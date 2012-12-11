@@ -6,7 +6,7 @@ import java.util.Map;
 public class Tagger {
 	String tagset;
 	String corpus;
-	Map<String, String> lexicon;
+	Map<String, String[]> lexicon;
 	String lexiconString;
 	
 	private void readLexicon(){
@@ -18,10 +18,9 @@ public class Tagger {
 			while(file.hasNext()){
 				String line = file.readLine();
 				String res[] = line.split("[ {}]+");
-				String tag = "";
-				for(int i = 1; i < res.length-1; i++)
-					tag = tag.concat(res[i] + " ");
-				tag = tag.concat(res[res.length - 1]);
+				String[] tag = new String[res.length-1];
+				for(int i = 1; i < res.length; i++)
+					tag[i-1] = res[i];
 				
 				lexicon.put(res[0], tag);
 				lexiconString = lexiconString + " " + res[0];
@@ -51,8 +50,10 @@ public class Tagger {
 	}
 	
 	private void initData() {
-	    lexicon = new HashMap<String, String>();
-	    lexicon.put(".", ".");
+	    lexicon = new HashMap<String, String[]>();
+	    
+	    String[] dot = {"."};
+	    lexicon.put(".", dot);
 	    
 	    readLexicon();
 	    

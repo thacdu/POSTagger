@@ -9,21 +9,16 @@ public class ViterbiHMM{
     private String[] hiddenAlphabet;
     private String[] observableAlphabet;
     private String[] observation;
-    private Map<String, String> lexicon;
+    private Map<String, String[]> lexicon;
     
     private double[][] A;
     private HashMap<String, Double> B;
     
     public ViterbiHMM(String tagSet, String obsA,
-            Map<String, String> lexicon, String corpus) {
+            Map<String, String[]> lexicon, String corpus) {
     	MatrixGenerator gen = new MatrixGenerator(lexicon, corpus, tagSet);
     	this.hiddenAlphabet = tagSet.split(" ");
     	this.observableAlphabet = obsA.split(" ");
-    	
-    	System.out.print("OBS : ");
-    	for(int i = 0; i < observableAlphabet.length; i++)
-    		System.out.print(observableAlphabet[i] + " ");
-    	System.out.println();
         this.lexicon = lexicon;
         this.A = gen.createMatrixA(0.01);
         this.B = gen.createMatrixB();
@@ -65,19 +60,17 @@ public class ViterbiHMM{
         	
         	String obs = observation[i];
         	System.out.println(obs);
-        	String[] tags;
-        	
-        	String resTag = lexicon.get(obs);
-        	if(resTag != null) tags = resTag.split(" ");
-        	else{
+        	String[] tags = lexicon.get(obs);
+        	if(tags == null){
         		obs = observableAlphabet[observableAlphabet.length - 1];
-        		tags = lexicon.get(obs).split(" ");
+        		tags = lexicon.get(obs);
+        		System.out.println(obs);
         	}
         	
             for (int j = 0; j < tags.length; j++) {
                 int prevIndex = ViterbiMatrixTools.indexOfMaximimumForCol(
                         i - 1, delta);
-                
+                System.out.println(tags[j]);
                 double emisValue = getEmisValue(obs + " " + tags[j]);
                 
                 int tagIndex = getTagIndex(tags[j]);
