@@ -11,7 +11,7 @@ public class Tagger {
 	
 	private void readLexicon(){
 		lexiconString = "";
-		FileInteraction file = new FileInteraction("Dict-UTF8.txt");
+		FileInteraction file = new FileInteraction("Dict-UTF8 -1.txt");
 		try{
 			file.openInputFile();
 			
@@ -62,7 +62,7 @@ public class Tagger {
 	        lexBuf.append(word + " ");
 	    }
 	    
-	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu . , ...";
+	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu . , ... : - \"";
 	}
 
 	

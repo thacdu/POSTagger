@@ -9,7 +9,6 @@ public class MatrixGenerator {
 	private Map<String, Integer> freq;
 	private String corpus;
 	private String tagset;
-	//private String[] tagSet;
 	
 	public MatrixGenerator(Map<String, String[]> lexicon, String corpus, String tagset) {
 		this.corpus = corpus;
@@ -35,7 +34,6 @@ public class MatrixGenerator {
 		
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		for (int j = 0; j < l.length; j++) {
-		    //Arrays.fill(result[j], 0.0);
 	        String[] tags = lexicon.get(l[j]);
 	        double value = 1.0 / tags.length;
 	        
@@ -45,7 +43,6 @@ public class MatrixGenerator {
 		}
 		
 		for (int j = 0; j < l.length; j++) {
-			//System.out.print(l[j] + " ");
 			String[] tags = lexicon.get(l[j]);
 			
 		    for (int k = 0; k < tags.length; k++) {
@@ -55,10 +52,27 @@ public class MatrixGenerator {
 		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + lexicon.get(l[index]).length;       
 		        }
 		        result.put(l[j] + " " + tags[k], a / b);
-		        //System.out.println(tags[k] + " " + a/b);
 		    }
-		    //System.out.println();
 		}
+		
+		for(int j = 0; j < l.length; j++) {
+			String[] tags = lexicon.get(l[j]);
+			
+			for(int k = 0; k < tags.length; k++){
+				String key = l[j] + " " + tags[k];
+				result.put(key, Math.log(result.get(key)));
+			}
+		}
+		/*
+		System.out.print("MANG B\n");
+		for(int j = 0; j < l.length; j++) {
+			String[] tags = lexicon.get(l[j]);
+			
+			for(int k = 0; k < tags.length; k++) {
+				System.out.print(result.get(l[j] + " " + tags[k]) + " ");
+			}
+			System.out.println();
+		}*/
 		
 		return result;
 	}
@@ -71,20 +85,19 @@ public class MatrixGenerator {
 	public double[][] createMatrixA(double diff) {
 	    String[] t = tagset.split(" ");
 	    double[][] res = new double[t.length][t.length];
-	    int cols = res[0].length;
-	    double average = 1.0 / cols;
+	    double average = 1.0 / res[0].length;
 	    for (int i = 0; i < res.length; i++) {
 	        Arrays.fill(res[i], average);
 	    }
+	    
 	    Random r = new Random();
-	    for (int i = 0; i < res.length; i++) {
+	    for (int i = 0; i < res.length; i++){
 	        double var = 1.0;
 	        while (var > diff)
 	            var = r.nextDouble();
 	        int pos = r.nextInt(res[i].length);
 	        boolean plus = true;
 	        for (int j = 0; j < res[i].length; j++) {
-	            // if not even, skip one random position
 	            if (res[i].length % 2 != 0 && j == pos)
 	                continue;
 	            if (plus && res[i][j] - var > 0) {
@@ -96,7 +109,6 @@ public class MatrixGenerator {
 	            }
 	        }
 	    }
-	    ViterbiMatrixTools.printMatrix(res);
 	    return res;
 	}
 	

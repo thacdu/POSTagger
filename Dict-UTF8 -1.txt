@@ -31135,4 +31135,10 @@ sán {V N}
 khò_khè {A}
 mãn_nhiệm {V}
 rong_ruổi {V}
-qufdsghfasghi {A V N D}
+. {.}
+, {,}
+... {...}
+: {:}
+- {-}
+" {"}
+theunknownword {A C E D I Nc M O N P S R V Np X Z Nu}

@@ -10,6 +10,7 @@ public class ViterbiHMM{
     private String[] observableAlphabet;
     private String[] observation;
     private Map<String, String[]> lexicon;
+    private double oo = 999999;
     
     private double[][] A;
     private HashMap<String, Double> B;
@@ -31,12 +32,12 @@ public class ViterbiHMM{
         init();
         induct();
         
-        System.out.println("Delta:");
-        ViterbiMatrixTools.printMatrix(delta);
-        System.out.println();
-        System.out.println("Psi:");
-        ViterbiMatrixTools.printMatrix(psi);
-        System.out.println();
+        //System.out.println("Delta:");
+        //ViterbiMatrixTools.printMatrix(delta);
+        //System.out.println();
+        //System.out.println("Psi:");
+        //ViterbiMatrixTools.printMatrix(psi);
+        //System.out.println();
         return getResult();
     }
     
@@ -46,9 +47,13 @@ public class ViterbiHMM{
     
     private void init() {
         delta = new double[hiddenAlphabet.length][observation.length];
+        for (int i = 0; i < delta.length; i ++) {
+        	Arrays.fill(delta[i], -oo);
+        }
+        
         int posOfStart = positionOfStartTag(); 
         
-        delta[posOfStart][0] = 1.0;
+        delta[posOfStart][0] = 0.0;
         psi = new int[hiddenAlphabet.length][observation.length - 1];
         for (int i = 0; i < psi.length; i++) {
             Arrays.fill(psi[i], -1);
@@ -57,32 +62,24 @@ public class ViterbiHMM{
     
     private void induct() {
         for (int i = 1; i < observation.length; i++) {
-        	
         	String obs = observation[i];
-        	System.out.println(obs);
         	String[] tags = lexicon.get(obs);
         	if(tags == null){
         		obs = observableAlphabet[observableAlphabet.length - 1];
         		tags = lexicon.get(obs);
-        		System.out.println(obs);
         	}
         	
             for (int j = 0; j < tags.length; j++) {
                 int prevIndex = ViterbiMatrixTools.indexOfMaximimumForCol(
                         i - 1, delta);
-                System.out.println(tags[j]);
                 double emisValue = getEmisValue(obs + " " + tags[j]);
-                
                 int tagIndex = getTagIndex(tags[j]);
-                //double res = delta[prevIndex][i-1] * B.get(observation[lexIndex] + " " + hiddenAlphabet[j]) * A[prevIndex][j];
-                double res = delta[prevIndex][i-1] * emisValue * A[prevIndex][tagIndex];
-                //delta[tagIndex][i] = res;
+                double res = delta[prevIndex][i-1] + emisValue + Math.log(A[prevIndex][tagIndex]);
                 if (res > delta[tagIndex][i]){
                 	delta[tagIndex][i] = res;
                     psi[tagIndex][i - 1] = prevIndex;
                 }
             }
-
         }
     }
     
@@ -90,7 +87,7 @@ public class ViterbiHMM{
         String[] resultArray = new String[psi[0].length];
         int lastIndexInPsi = ViterbiMatrixTools.indexOfMaximimumForCol(
                 delta[0].length - 1, delta);
-        if (lastIndexInPsi == -1) {
+        if (lastIndexInPsi == -oo) {
             System.out.println("no tag-sequence found for input, exit.");
             System.exit(0);
         }

@@ -2,31 +2,11 @@
 import java.text.NumberFormat;
 
 public class ViterbiMatrixTools {
-	
-	static double maximimumForCol(int i, double[][] matrix) {
-	    double maxValue = 0.0;
-	    for (int j = 0; j < matrix.length; j++) {
-	        maxValue = Math.max(maxValue, matrix[j][i]);
-	    }
-	    return maxValue;
-	}
+	private static double oo = 999999;
 	
 	static int indexOfMaximimumForCol(int i, double[][] matrix) {
 	    int maxIndex = -1;
-	    double maxValue = -1.0;
-	    for (int j = 0; j < matrix.length; j++) {
-	    	//System.out.println("( " + i + " " + j +")");
-	        if (matrix[j][i] > maxValue) {
-	            maxIndex = j;
-	            maxValue = matrix[j][i];
-	        }
-	    }
-	    return maxIndex;
-	}
-	
-	static int indexOfMaximimumForCol(int i, int[][] matrix) {
-	    int maxIndex = -1;
-	    int maxValue = -1;
+	    double maxValue = -oo;
 	    for (int j = 0; j < matrix.length; j++) {
 	        if (matrix[j][i] > maxValue) {
 	            maxIndex = j;
