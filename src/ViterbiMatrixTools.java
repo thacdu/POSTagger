@@ -2,7 +2,7 @@
 import java.text.NumberFormat;
 
 public class ViterbiMatrixTools {
-	private static double oo = 999999;
+	private static double oo = 9999;
 	
 	static int indexOfMaximimumForCol(int i, double[][] matrix) {
 	    int maxIndex = -1;

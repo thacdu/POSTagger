@@ -5,7 +5,6 @@ import java.util.Map;
 
 public class Tagger {
 	String tagset;
-	String corpus;
 	Map<String, String[]> lexicon;
 	String lexiconString;
 	
@@ -32,47 +31,19 @@ public class Tagger {
 		}
 	}
 	
-	private void readCorpus(String fileName){
-		FileInteraction file = new FileInteraction(fileName);
-		corpus = "";
-		
-		try{
-			file.openInputFile();
-			while(file.hasNext()){
-				String line = file.readLine();
-				corpus = corpus + line;
-			}
-			
-			file.closeInputFile();
-		}catch(IOException e){
-			e.printStackTrace();
-		}
-	}
-	
 	private void initData() {
 	    lexicon = new HashMap<String, String[]>();
 	    
-	    String[] dot = {"."};
-	    lexicon.put(".", dot);
-	    
 	    readLexicon();
 	    
-	    StringBuffer lexBuf = new StringBuffer();
-	    for (String word : lexicon.keySet()) {
-	        lexBuf.append(word + " ");
-	    }
-	    
-	    tagset = "A C E D I Nc M O N P S R V Np X Z Nu . , ... : - \"";
+	    tagset = "A E D I Nc Np Nu M O N C P S R V X Z . , ... : - \"";
 	}
 
 	
 	public void tag(String inputFileName) {
 	    initData();
 	    
-	    readCorpus(inputFileName);
-	    
-	    ViterbiHMM hmm = new ViterbiHMM(tagset, lexiconString, lexicon,
-	            corpus);
+	    ViterbiHMM hmm = new ViterbiHMM(tagset, lexiconString, lexicon);
 	    
 	    FileInteraction tagFile = new FileInteraction(inputFileName);
 	    FileInteraction resultFile = new FileInteraction("output.txt");

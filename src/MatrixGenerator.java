@@ -1,78 +1,70 @@
-import java.util.Arrays;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
-import java.util.StringTokenizer;
 
 public class MatrixGenerator {
 	private Map<String, String[]> lexicon;
 	private Map<String, Integer> freq;
-	private String corpus;
-	private String tagset;
+	private String[] tagset;
+	private String trainingFile = "mergeFile.txt";
 	
-	public MatrixGenerator(Map<String, String[]> lexicon, String corpus, String tagset) {
-		this.corpus = corpus;
+	public MatrixGenerator(Map<String, String[]> lexicon, String[] tagset) {
 		this.lexicon = lexicon;
 		this.tagset = tagset;
-		countLexems();
-		System.out.println("Tagset: " + tagset);
-		System.out.println();
-		System.out.println("Corpus: " + corpus);
-		System.out.println();
-		System.out.println("Frequencies:");
-		System.out.println();
-		printMap(freq);
 	}
 	
-	private double getValue(String string, HashMap<String, Double> map){
-		if (map.get(string) == null) return 0.0;
-		return map.get(string);
-	}
-	
-	public HashMap<String, Double> createMatrixB() {
+	public HashMap<String, Double> createMatrixB(){
 		String[] l = lexicon.keySet().toArray(new String[0]);
-		
 		HashMap<String, Double> result = new HashMap<String, Double>();
-		for (int j = 0; j < l.length; j++) {
-	        String[] tags = lexicon.get(l[j]);
-	        double value = 1.0 / tags.length;
-	        
-	        for(int k = 0; k < tags.length; k++){
-	        	result.put(l[j] + " " + tags[k], value);
-	        }
+		HashMap<String, Integer> C = new HashMap<String, Integer>();
+		
+		for(int i = 0; i < l.length; i++){
+			String tags[] = lexicon.get(l[i]);
+			for(int j = 0; j < tags.length; j++)
+				result.put(l[i] + " " + tags[j], 0.0);
 		}
 		
-		for (int j = 0; j < l.length; j++) {
-			String[] tags = lexicon.get(l[j]);
+		for(int i = 0; i < tagset.length; i++)
+			C.put(tagset[i], 0);
 			
-		    for (int k = 0; k < tags.length; k++) {
-		    	double a = result.get(l[j] + " " + tags[k]) * getFreq(l[j]) + 1;
-		        double b = 0.0;
-		        for (int index = 0; index < l.length; index++) {
-		            b += getValue(l[index] + " " + tags[k], result) * getFreq(l[index]) + lexicon.get(l[index]).length;       
-		        }
-		        result.put(l[j] + " " + tags[k], a / b);
-		    }
-		}
+		FileInteraction file = new FileInteraction(trainingFile);
 		
-		for(int j = 0; j < l.length; j++) {
-			String[] tags = lexicon.get(l[j]);
+		try{
+			file.openInputFile();
 			
-			for(int k = 0; k < tags.length; k++){
-				String key = l[j] + " " + tags[k];
-				result.put(key, Math.log(result.get(key)));
+			while(file.hasNext()){
+				String[] line = file.readLine().split("[ ]+");
+				for(int i = 0; i < line.length; i++){
+					String[] temp = line[i].split("[/]+");
+					if(temp.length < 2) continue;
+					String key = temp[0] + " " + temp[1];
+					
+					if(result.get(key) == null)
+						result.put(key, 1.0);
+					else result.put(key, result.get(key) + 1.0);
+					
+					if(C.get(temp[1]) == null)
+						C.put(temp[1], 1);
+					else C.put(temp[1], C.get(temp[1]) + 1);
+				}
 			}
+			
+			int posibleWT = tagset.length * l.length;
+			
+			for (int j = 0; j < l.length; j++) {
+				String[] tags = lexicon.get(l[j]);
+				
+			    for (int k = 0; k < tags.length; k++) {
+			    	double a = result.get(l[j] + " " + tags[k]) + 0.5;
+			        double b = C.get(tags[k]) + posibleWT*0.5;
+			        result.put(l[j] + " " + tags[k], Math.log(a / b));
+			    }
+			}
+			
+			file.closeInputFile();
+		}catch(IOException e){
+			e.printStackTrace();
 		}
-		/*
-		System.out.print("MANG B\n");
-		for(int j = 0; j < l.length; j++) {
-			String[] tags = lexicon.get(l[j]);
-			
-			for(int k = 0; k < tags.length; k++) {
-				System.out.print(result.get(l[j] + " " + tags[k]) + " ");
-			}
-			System.out.println();
-		}*/
 		
 		return result;
 	}
@@ -82,55 +74,69 @@ public class MatrixGenerator {
 		return 0;
 	}
 	
-	public double[][] createMatrixA(double diff) {
-	    String[] t = tagset.split(" ");
-	    double[][] res = new double[t.length][t.length];
-	    double average = 1.0 / res[0].length;
-	    for (int i = 0; i < res.length; i++) {
-	        Arrays.fill(res[i], average);
-	    }
-	    
-	    Random r = new Random();
-	    for (int i = 0; i < res.length; i++){
-	        double var = 1.0;
-	        while (var > diff)
-	            var = r.nextDouble();
-	        int pos = r.nextInt(res[i].length);
-	        boolean plus = true;
-	        for (int j = 0; j < res[i].length; j++) {
-	            if (res[i].length % 2 != 0 && j == pos)
-	                continue;
-	            if (plus && res[i][j] - var > 0) {
-	                res[i][j] += var;
-	                plus = false;
-	            } else if (res[i][j] - var > 0) {
-	                res[i][j] -= var;
-	                plus = true;
-	            }
-	        }
-	    }
-	    return res;
+	public double[][] createMatrixA(){
+		FileInteraction file = new FileInteraction(trainingFile);
+
+		double epsilon = 0.00005;
+		
+		String[] tagSet = new String[tagset.length];
+		
+		for(int i = 0; i < tagset.length; i ++)
+			tagSet[i] = "/" + tagset[i];
+		
+		double res[][] = new double[tagset.length][tagset.length];
+		
+		try{
+			file.openInputFile();
+			int[] totalTag = new int[tagset.length];
+			for(int i = 0 ; i < tagset.length ; i++){
+				totalTag[i] = 0;
+				for(int j = 0 ; j < tagset.length ; j++){
+					res[i][j] = 0.0;
+				}
+			}
+			
+			while(file.hasNext()){
+				String temp = "./. " + file.readLine();
+				String[] line = temp.split("[ ]+");
+				
+				for(int i = 0; i < line.length; i++){
+					String current = line[i];
+					
+					int indexTagCurrent = getTagIndex(current);
+					totalTag[indexTagCurrent]++;
+					if(i < line.length - 1){
+						String after = line[i+1];
+						int indexTagAfter = getTagIndex(after);
+						res[indexTagCurrent][indexTagAfter]++;
+					}
+				}
+				
+			}
+			
+			for(int i = 0 ; i < tagset.length ; i++){
+				for(int j = 0 ; j < tagset.length ; j++){
+					if(res[i][j] != 0.0) res[i][j] = (1-epsilon) * res[i][j] / totalTag[i] + epsilon;
+					else res[i][j] = epsilon;
+					System.out.printf("%f ", res[i][j]);
+				}
+				System.out.println();
+			}
+			/*
+			for(int i = 0 ; i < tagset.length ; i++){
+				System.out.println(totalTag[i]+" " + tagset[i]);
+			}*/
+			file.closeInputFile();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+		return res;
 	}
 	
-	private void printMap(Map<String, Integer> map) {
-	    for (Map.Entry<String, Integer> e : map.entrySet() ) {
-	        System.out.println(e.getKey() + ": " + e.getValue());
-	    }
-	}
-	
-	private void countLexems() {
-	    freq = new HashMap<String, Integer>();
-	    
-	    for (StringTokenizer tok = new StringTokenizer(corpus, " \t\n.,", true);
-	         tok.hasMoreTokens(); ) {
-	        String rec = tok.nextToken();
-	        if (lexicon.containsKey(rec)) {
-	            if (freq.containsKey(rec)) {
-	                freq.put(rec, freq.get(rec) + 1);
-	            } else {
-	                freq.put(rec, 1);
-	            }
-	        }
-	    }
-	}
+	private int getTagIndex(String string){
+		int res = 0;
+    	for(int i = 0; i < tagset.length; i++)
+    		if(string.contains("/" + tagset[i])) res = i;
+    	return res;
+    }
 }
