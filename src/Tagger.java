@@ -10,7 +10,7 @@ public class Tagger {
 	
 	private void readLexicon(){
 		lexiconString = "";
-		FileInteraction file = new FileInteraction("Dict-UTF8 -1.txt");
+		FileInteraction file = new FileInteraction("newDict.txt");
 		try{
 			file.openInputFile();
 			
@@ -36,7 +36,7 @@ public class Tagger {
 	    
 	    readLexicon();
 	    
-	    tagset = "A E D I Nc Np Nu M O N C P S R V X Z . , ... : - \"";
+	    tagset = "Np Nc Nu Nb Ny Yb Md N V A P L M R E F C I T B Y S X H ! \" ' ( ) *  + , - _ . / : ; ? ...";
 	}
 
 	
@@ -75,5 +75,6 @@ public class Tagger {
 	public static void main(String[] args){
 		Tagger t = new Tagger();
 		t.tag("input.txt");
+		System.out.println("Done!");
 	}
 }

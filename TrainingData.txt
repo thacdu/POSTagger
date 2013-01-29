@@ -1,0 +1,2160 @@
+, {,} 723
+. {.} 651
+3g {Nb Np} 11
+680Np {M Np} 43
+: {:} 248
+a {A N X} 12
+a2dp {Y} 2
+about {Eb} 1
+account {Nb} 2
+active {Ab V} 4
+acura2201@htcspain {Nb} 1
+add {Vb} 1
+addonis {Nb} 4
+admin {Nb} 3
+ag {Y} 1
+ah {T} 4
+ai {P} 49
+aj {X} 1
+album {N Nb} 2
+all {L Pb} 2
+allow {Vb} 1
+alt {Yb} 1
+amd {Y} 6
+and {Cb} 5
+android {N Nb Np} 41
+angry_farm {Nb} 11
+anh {N Np P} 23
+anh_em {N P} 5
+anti {Yb yb} 5
+app {N Nb Y Yb} 13
+apple {Nb} 11
+application_shortcuts {Nb} 7
+applications {N} 2
+apps {Nb Yb yb} 4
+arm {Y} 2
+at&amp {N} 1
+audio {Nb} 1
+auto {Ab} 1
+auto_lock {Nb} 2
+auto_text {Nb} 2
+autofocus {Nb} 1
+autotext {Nb} 3
+à {T} 1
+ảnh {N} 1
+ạ {T} 2
+b {X} 4
+b/g/n {X}
+ba {N} 1
+bada {Y} 19
+badaNp {N Np} 2
+ban_quản_trị {N} 1
+ban_đêm {N} 1
+ban_đầu {N} 1
+bannel {N} 1
+bao {L} 1
+bao_giờ {P} 2
+bao_giờ {E H P} 11
+bao_nhiêu {H P} 5
+baonet {N Nb} 2
+baseband {Nb} 1
+batery_level {Nb} 1
+battery {N} 2
+battery_drained {Vb} 1
+battry_ex {N} 1
+bay {V} 1
+bá_đạo {A} 1
+bác {P} 13
+bán {V} 1
+bản {Nc} 2
+bản_đồ {N} 3
+bảo {V} 1
+bạn {P} 10
+bb {Y} 14
+bb_battery_watch {Nb} 1
+bbdic {Nb} 1
+bbdict {Nb} 10
+bbinfo {Nb} 1
+bbnotepad {Nb} 5
+bean {Nb} 1
+bebuzz {N} 1
+beejive {Nb} 6
+belle {Nb} 1
+benzen {N} 4
+berry {Np Y Yb} 6
+berry_buzz {Nb} 1
+berrybuzz {Nb} 4
+best {Ab} 1
+bisNp {Y Yb} 4
+biết {V} 1
+biết_mấy {X} 1
+biến {V} 11
+biết {N V} 54
+biểu_tượng {N} 7
+black {Ab} 8
+bluetooth {Nb} 7
+bo {V} 1
+board {Nb} 1
+book {Nb} 1
+booster {N} 1
+box {Nb} 4
+bỏ {V} 1
+bro {Y Yb} 2
+brower {Np} 2
+browser {Nb} 3
+bt {Y} 3
+bus {nb} 1
+but {Cb} 1
+buồn {A} 2
+buổi {N} 1
+buổi_sáng {N} 1
+by {Eb} 3
+bà_xã {N} 1
+bài {N Nc} 11
+bài_báo {N} 1
+bài_viết {N} 3
+bàn {N V} 2
+bàn_chải {N} 1
+bàn_cãi {V} 3
+bàn_phím {N} 8
+bày_tỏ {V} 2
+bá_đạo {A} 3
+bác {L P} 185
+bám {V} 8
+bán {V} 24
+báo {N V} 4
+bây_giờ {N} 2
+bây_giờ {N} 7
+bèo {A} 2
+bé {N} 3
+bên {E N} 14
+bên_cạnh {N} 1
+bên_trong {E} 1
+bình {N Nc} 5
+bình_thường {A N} 11
+bóc {V} 1
+bói_toán {N} 1
+bồ {N} 1
+bộ_gõ {N} 1
+bộ_nhớ {N} 1
+bù {V} 1
+bằng {E} 2
+bớt {V} 1
+bưu_điện {N} 1
+bữa {A} 1
+bước {N V} 14
+bạn { N P} 94
+bạn_gái {N} 2
+bạn_trẻ {N} 2
+bản {N Nc} 17
+bản_quyền {N} 1
+bản_sắc {N} 1
+bản_thân {N} 2
+bản_đồ {N} 6
+bảo {V} 5
+bảo_dưỡng {V} 3
+bảo_hành {V} 1
+bảo_tỏi {V} 2
+bấm {V} 10
+bất-kỳ {A} 1
+bất_cứ {R} 1
+bất_kì {} 1
+bất_kể {R} 1
+bất_kỳ {A X} 2
+bất_ngờ {A} 1
+bất_tiện {A} 1
+bất_trợt {A} 1
+bấy_nhiêu {P} 3
+bậc {N} 2
+bận {V} 1
+bật {V} 9
+bật_mí {V} 1
+bắc {N} 2
+bắn {V} 2
+bắt_chước {V} 2
+bắt_mắt {A} 3
+bắt_đầu {V} 4
+bằng {A C E} 15
+bẵng {V} 1
+bề_ngoài {N} 2
+bền {A} 7
+bền_bỉ {A} 2
+bệnh {N} 7
+bị {R T V} 42
+bỏ {V} 8
+bỏ_qua {V} 1
+bố_trí {V} 1
+bồ_kết {V} 1
+bổ_sung {V} 1
+bổ_ích {A} 2
+bộ {N Nc} 4
+bộ_nhớ {N} 5
+bộ_nhớ_máy {N} 1
+bộ_nhớ_trong {N} 2
+bộ_nhớ_đệm {N} 1
+bội_phần {R} 1
+bớt {V} 1
+bởi {E} 1
+bởi_vậy {C} 1
+bụi {N} 2
+bụi_bẩn {N} 1
+bụi_bặm {N} 1
+bức_hình {N} 1
+bừa {A} 1
+bữa {N} 1
+bực {A} 2
+c1 {N} 2
+cable {Nb} 5
+cache {Nb} 1
+cafe {N} 3
+calendar {Nb} 1
+call {Vb} 1
+call_bocker {N} 1
+camera {N Nb} 9
+cao {A} 18
+cao_cấp {A} 1
+cao_sang {A} 1
+cao_thủ {N} 1
+cap {Nb} 1
+card {Nb} 2
+care {Nb} 1
+carier {Nb} 2
+cài {V} 5
+các {L} 6
+cách {N} 1
+cái {Nc T nc} 13
+cả {P} 1
+cảm_ơn {V} 1
+cd {N} 1
+cdma {Yb} 3
+cfw {Y} 4
+chai {A} 1
+chat {Vb} 3
+chat_chit {V} 1
+chán {A} 1
+chả {R} 2
+check {V Vb} 5
+chi {R} 1
+chi_phí {N} 1
+chi_tiết {A} 2
+chia {V} 1
+chia_buồn {V} 2
+chia_sẻ {V} 3
+chip {N Nb} 3
+chính {A} 1
+chính_hãng {A} 1
+chỉ {R} 4
+chỉnh {V} 1
+chiếc {Nc} 5
+chiếm_dụng {V} 1
+chiến {V} 1
+chiến_trường {N} 1
+chiếu {V} 1
+chiều {N} 3
+chiều_nay {N} 2
+cho {C E R T V} 139
+cho_nên {C} 1
+cho_phép {V} 1
+chọn {V} 2
+chung {A} 6
+chung_tình {V} 1
+chuyên {A} 2
+chuyên_nghiệp {A} 1
+chuyển {V} 1
+chuyển {V} 3
+chuyển_động {N} 2
+chuyện {N} 5
+chuẩn {A} 1
+chuông {N} 2
+chú_ý {V} 1
+chúng_ta {P} 1
+chuẩn {A I} 11
+chuối {A} 1
+chuộng {V} 1
+chà {I} 1
+chào {V} 1
+chán {A V} 5
+chát {A} 1
+chân {N} 3
+chém {V} 5
+chém_gió {V} 1
+chép {V} 1
+chê {V} 9
+chìm {V} 1
+chìm_xuống {V} 1
+chí_ít {X} 1
+chính {A T} 8
+chính_hãng {A N} 4
+chính_thức {A} 2
+chính_xác {A} 4
+chíp {N} 1
+chói {A} 1
+chú {P} 5
+chú_em {P} 2
+chúc {V} 2
+chúc_mừng {V} 2
+chút {A L N R T} 6
+chăng {T} 1
+chắc {T V} 4
+chơi {V} 18
+chờ {V} 2
+chớp {V} 1
+chưa {H P R T} 65
+chưa_hề {R} 1
+chưa_thể {V} 1
+chương_trình {N} 2
+chứ {T} 6
+chạy {V} 45
+chả {R T} 10
+chấm {N} 1
+chất {A} 2
+chất_lượng {N} 16
+chậm {A} 13
+chậm_chạp {A} 1
+chậm_rì {A} 2
+chắc {A V} 23
+chắc_chắn {A} 5
+chắc_là {T} 1
+chắc_ăn {A} 3
+chẳng {R T} 13
+chẳng_hạn {X} 1
+chặn {V} 2
+chặt {V} 1
+chẹp {X} 3
+chẹp_chẹp {X} 1
+chế_độ {N} 5
+chết {V} 4
+chỉ {P R V} 54
+chỉ_dẫn {V} 1
+chỉ_giáo {V} 2
+chỉnh {V} 3
+chỉnh_sửa {V} 2
+chị {N} 1
+chịu {V} 4
+chọn {V} 6
+chống {V} 3
+chỗ {N} 15
+chờ {V} 9
+chờ_đợi {V} 2
+chục {M} 1
+chụp {V} 19
+chụp_hình {V} 7
+chụp_ảnh {N V} 8
+chủ {N} 5
+chủ_nhật {N} 1
+chủ_quan {N} 2
+chủng_loại {N} 2
+chứ {C R T} 31
+chứa {V} 1
+chức_năng {N} 11
+chứng_cứ {N} 2
+chừng {N} 4
+chữ {N} 7
+chữ_ký {N} 1
+chữ_số {N,} 3
+chữa {V} 1
+clean {Vb} 1
+clear_log {V} 1
+click {Vb} 1
+clip {N Nb} 4
+cm {Y} 1
+cmw {Y} 3
+code {Nb} 2
+coi {T} 1
+coi_chừng {V} 2
+computer> {Nb} 2
+con {N Nc nc} 66
+con_chó {N} 1
+con_gái {N} 2
+con_số {N} 2
+con_đường {N} 1
+conections {Nb} 1
+connection {Nb} 1
+console {Nb} 1
+contact {Vb} 1
+contacts {Vb} 1
+continuous {Ab} 1
+control {N} 1
+controlbanel {Nb} 1
+controlbbanel {Nb} 2
+cook {Nb} 1
+cool {Ab} 2
+copy {Vb} 2
+còn {C V} 4
+có {C T V} 34
+có_thể {R} 1
+cỏ_lau {N} 1
+cpu {Yb} 1
+cpuNp {Yb} 1
+crash {Vb} 1
+credit {Vb} 1
+crunch_sms {Nb} 1
+crunchsms {Nb} 1
+cung_cấp {V} 2
+cung_trăng {N} 1
+cùi {A} 2
+cùng {C} 1
+cũng {R} 11
+của {E} 8
+cục {Nc} 1
+cục_bộ {N} 2
+cuối_cùng {A} 3
+cuối_tuần {N} 1
+cuồng {A} 2
+cuộc {Nc} 2
+cuộc_gọi {N} 2
+cwm {Y} 4
+cydica {Nb} 3
+cài {V} 32
+cài_đặt {V} 5
+càng {R} 5
+cá {N} 1
+cá_nhân {N} 2
+cá_sấu {N} 2
+các {L} 99
+cách {N Nc V} 18
+cách_mạng {N} 4
+cái {N NC Nc T} 141
+cám_ơn {V} 4
+cánh {N} 1
+cáp {N} 3
+cân_bằng {A} 1
+cân_nhắc {V} 1
+câu {N} 1
+câu_hỏi {N} 3
+cây {Nc} 1
+cầm {V} 1
+cần {V} 7
+cần_thiết {A} 4
+còn {C R V} 59
+còn_lại {V} 14
+có {C R T V} 245
+có_lẽ {C T} 8
+có_phải {R V} 3
+có_thể {C R} 26
+có_vẻ {R X} 2
+công {N} 1
+công_cụ {N} 1
+công_nghiệp {N} 1
+công_nghệ {N} 5
+công_nhận {V} 1
+công_tác {V} 2
+công_ty {N n} 3
+công_tâm {V} 1
+công_việc {N} 2
+công_đoạn {N} 1
+cố {V} 1
+cổ {A} 1
+cùi {A} 3
+cùi_bắp {A} 1
+cùng {A C E} 9
+căn_bệnh {N} 2
+cũ {A} 17
+cũng {R} 137
+cơ {T} 6
+cơ_bản {A} 1
+cơ_mà {C} 1
+cứ {R} 1
+cử_động {N} 1
+cướp {V} 1
+cạch {V} 1
+cạnh {N} 1
+cạnh_tranh {V} 2
+cả {L P R T} 37
+cải_cách {V} 1
+cảm_giác {A N V} 6
+cảm_nhận {N V} 7
+cảm_phiền {V} 1
+cảm_thấy {V} 4
+cảm_tình {N} 3
+cảm_ơn {V} 15
+cảm_ứng {N V} 23
+cấp_3 {N} 1
+cấu_hình {N} 11
+cầm {V} 9
+cần {V} 24
+cẩn_thận {A} 1
+cập_nhật {V} 4
+cắm {V} 4
+cắt {V} 2
+cặp {N} 2
+cặp_đôi {N} 1
+cố {R V} 5
+cồn {N} 2
+cổ {A} 3
+cổ_phần {N} 1
+cổng {N} 1
+cộng {V} 1
+cộng_tác_viên {N} 1
+cỡ {N} 2
+cụ_thể {A} 2
+cục {Nc} 1
+củ {N} 2
+của { E N} 136
+cứ {R} 35
+cứng {A} 1
+cứng_nhắc {A} 3
+cửa {N} 1
+cửa_hàng {N} 4
+cực {R} 8
+cực_kỳ {R} 1
+da {N} 1
+daf {Y} 1
+dalvik {Nb} 1
+dangthuan2 {No} 1
+danh_bạ {N} 1
+danh_thiếp {N} 1
+danh_tiếng {A} 1
+data {Nb} 1
+dài {A} 1
+dạo {N} 1
+dbt123 {Y} 1
+ddinfo {Nb} 2
+dell {Nb Np} 3
+dellNp {N} 1
+deodexed_stock_jb {Nb} 1
+device {Nb} 2
+devil {N} 5
+dex {Nb} 1
+die {V Vb} 3
+diễn_đàn {N} 2
+do { C E V} 18
+doanh_nhân {N} 1
+dock {N} 1
+document {Nb} 1
+does {Vb} 1
+domination {Nb} 3
+down {Vb} 6
+dòng {N} 1
+driver {N Nb} 3
+du_lịch {N} 1
+dung_lượng {N} 4
+dungkk93 {Np} 1
+duy_nhất {A} 1
+dù {C} 2
+dùm {V} 1
+dùng {V} 10
+dvd {N} 1
+dài {A} 2
+dành {V} 2
+dày {A} 1
+dám {R V} 3
+dán {V} 1
+dáng {N} 2
+dã_man {A} 1
+dìm_hàng {V} 1
+dò {V} 1
+dòng {N Nc} 12
+dù {C E} 8
+dù_sao {C} 1
+dùm {R T V} 8
+dùng {B V} 98
+dùng_thử {V} 1
+dăm_ba {L} 1
+dĩ_nhiên {A} 1
+dũng {Mp} 2
+dư {A V} 2
+dương {N} 1
+dưới {E} 2
+dữ {R} 1
+dựa {V} 2
+dưới {A} 1
+dường_như {T} 1
+dạ {X} 1
+dạo_này {N} 2
+dấu {N} 2
+dần {R} 2
+dầu {N} 1
+dẫn {V} 3
+dế {N} 3
+dễ {A} 15
+dễ_dàng {A} 1
+dễ_thương {A} 2
+dị_ứng {A} 1
+dịch_vụ {N} 2
+dịp {N} 1
+dốt {A} 1
+dở {A} 2
+dứt_khoát {A} 1
+dừng {V} 1
+dữ {A} 2
+dữ_liệu {N} 1
+dự_kiến {V} 1
+dự_tính {V} 1
+dựng {V} 1
+e {P} 74
+em {N P V p} 198
+em_gái {N} 2
+em_nó {P} 2
+email {Nb Vb} 2
+enable {Vb} 1
+endclear {N Nb} 2
+epub {N} 1
+es {Y} 1
+everyone {Pb} 1
+exe {Yb} 2
+explorer {Nb} 2
+extralight {Nb} 1
+f-store {N} 1
+f87 {Y} 2
+f87group {N} 2
+facebook {N Nb} 2
+fail {Ab} 2
+fan {Nb} 1
+fask {X} 1
+fc {Y} 1
+fieldruner {Nb} 1
+file {Nb} 10
+filescout {Nb} 1
+film {Nb} 4
+fix {V Vb} 3
+flaser {Np} 1
+flash {N Nb V Vb} 21
+flash_lite {Nb} 1
+flashlight {Nb} 1
+fm {Yb} 1
+font {Nb} 1
+for {Eb} 1
+format {Vb} 1
+found {Vb} 2
+free {A Ab N V} 6
+freelight {Nb} 1
+from {Eb} 8
+fruit {Nb} 1
+fruits_ninja {Nb} 1
+full {A Ab} 9
+fw {Nb} 1
+g {Nu X} 9
+galery {Nb} 1
+game {N Nb} 16
+games(n8) {N} 1
+games {N Nb} 7
+gb {Nu} 7
+gg {Y} 1
+ghi {V} 2
+ghé {V} 2
+ghép {V} 1
+ghét {V} 2
+ghê {A R} 5
+giao_diện {N} 9
+giao_dịch {V} 1
+giao_lưu {V} 1
+giao_thông {N} 1
+giá {N} 3
+giá_tiền {N} 2
+giải_nén {V} 2
+giảm {V} 2
+gió {N} 1
+già {A} 1
+già_nua {A} 1
+giàu {A} 5
+giá {N} 38
+giá_cả {N} 7
+giá_thành {N} 10
+giây {Nu} 3
+gió {N} 2
+giống {A} 1
+giùm {X} 1
+giúp {V} 12
+giúp_đỡ {V} 2
+giắc {Nb} 1
+giờ {N} 2
+giữ {V} 1
+gì {P} 5
+giải_nghệ {V} 1
+giải_quyết {V} 2
+giải_thích {V} 1
+giải_trí {N} 2
+giảm {V} 3
+giản {A} 1
+giản_nén {V} 1
+giọng {N} 1
+giỏi {A} 1
+giống {A N V} 16
+giới {N} 1
+giới_hạn {V} 2
+giới_thiệu {V} 19
+giờ {N} 16
+giời {I} 2
+giữ {V} 5
+giữa {E} 1
+gmail {N Nb} 7
+go {Vb vb} 3
+good {Ab} 5
+google {Nb Vb nb} 7
+google_earth {Nb} 2
+google_map {Nb} 1
+google_maps {Nb} 2
+google_sync {N Nb} 3
+góc {N} 1
+gprs.brower {Np} 1
+gprs {Np Y Yb} 3
+gps {Yb} 2
+gpsed {N} 1
+gpu {Yb} 2
+gsm {Yb} 4
+gu {N} 1
+gà {A N} 3
+gà_mờ {A} 1
+gái {N} 4
+gây {V} 13
+gì {P T} 64
+gìn_giữ {V} 1
+gòn {Np} 1
+góc_độ {N} 1
+gói {N} 1
+góp {V} 1
+gồm {V} 1
+gõ {V} 2
+gạch {N V} 2
+gạch_chân {V} 1
+gấp {A} 2
+gấp_đôi {L} 1
+gấu {N} 1
+gần {A} 7
+gắm {V} 1
+gắn {V} 4
+gặp {V} 4
+gọi {V} 23
+gọn {A} 3
+gọn_gàng {A} 1
+gốc {A N} 3
+gớm {A I R} 3
+gởi {V} 1
+gợi_ý {V} 2
+gửi {V} 4
+h {Nu} 1
+ha {X} 2
+hack {Vb} 2
+hack_phone {Vb} 1
+hackphone {Vb} 1
+haftlife {Nb} 1
+haha {I} 2
+hai {M} 3
+handheld {Nb} 1
+hao {A} 1
+hard {Ab} 1
+hay {A C R T} 59
+hay_không {H} 2
+hay_sao {H T} 2
+hà {T} 1
+hàng {N} 2
+hãng {N} 1
+hả {T} 5
+hạn {A} 1
+hd {N Yb} 2
+hdd {N} 1
+he {X} 1
+he_he {X} 1
+hehe {I} 5
+hehehe {I} 1
+help {Vb} 2
+hen {T} 2
+hhvn {Y} 2
+hi {X} 1
+hi_hi {X} 1
+hic {I X} 8
+hihi {I X} 5
+hiii {X} 1
+hiiii {X} 3
+hiiiii {X} 1
+hix {I} 10
+hix_hix {I} 1
+hình {N} 1
+hiếm {A} 2
+hiếm_thấy {A} 1
+hiền {A} 2
+hiểu {V} 7
+hiện {N V} 8
+hiện_giờ {N} 1
+hiện_nay {N} 2
+hiện_thực {N} 1
+hiện_tượng {N} 1
+hiện_tại {N} 5
+hiệu_ứng {N} 3
+hj {I} 1
+hjhj {X} 3
+hoa {A} 2
+home {N Nb} 2
+hồng_kông/Np {V} 1
+hot {Ab} 1
+hotkey_manager {Nb} 1
+hotsync {Yb} 3
+how {Hb} 1
+hoài {R T} 3
+hoàn_chỉnh {A} 1
+hoàn_cảnh {N} 1
+hoàn_hảo {A} 3
+hoàn_thiện {A} 2
+hoàn_toàn {A} 2
+hoá_ra {X} 1
+hoặc {C} 2
+hỏi {V} 2
+hỏng {A} 1
+hoạt_động {V} 4
+hoặc {C} 19
+hspl {y} 6
+huhu {I X} 2
+huu {X} 1
+hy_vọng {V} 1
+hy_vọng {V} 1
+hyperx@xda {Nb} 2
+hà {T X} 12
+hàng {N} 22
+hàng_nghìn {L} 1
+hàng_trăm {L} 1
+hành {N V} 5
+hành_chính {N} 1
+hào_hứng {A} 1
+hào_phóng {A} 1
+hách_dịch {A} 1
+hâm_mộ {V} 2
+hãng {N} 8
+hãnh_diện {A} 1
+hãy {R} 6
+hè {N} 1
+hết {T V} 4
+hình {N V} 9
+hình_dáng {N} 1
+hình_như {C R X} 7
+hình_thành {V} 1
+hình_ảnh {N V} 4
+hóa_ra {X} 2
+hôm {N} 5
+hôm_nay {N} 4
+hôm_qua {N} 4
+hỗ_trợ {V} 2
+hđh {Y} 1
+hơi {R} 25
+hơn {A R} 76
+hợp_lý {A} 1
+hư {A V} 4
+hư_hỏng {A} 3
+hướng_dẫn {N V} 11
+hạ {V} 1
+hạn_chế {N V} 4
+hả {H T} 7
+hả_hê {A} 1
+hấp_dẫn {A} 1
+hầu_hết {L R X} 4
+hầu_như {R} 1
+hắn {P} 1
+hẳn {R T} 6
+hẹn {V} 3
+hết {A R T V} 26
+hề {T} 5
+hệ {N Nc} 2
+hệ_thống {N} 13
+hệ_điều_hành {N} 24
+họ {P} 6
+học {V} 2
+học_hỏi {V} 3
+học_sinh {N} 3
+hỏi {V} 24
+hỏi_thăm {V} 2
+hỏng {A V} 3
+hồi {N} 4
+hồi_sinh {V} 2
+hồn {N} 1
+hổ_trợ {V} 2
+hỗ_trợ {V} 14
+hộ {V} 11
+hội_chứng {N} 2
+hộp {N} 5
+hở {A T} 2
+hợp {V} 3
+hợp_lý {A} 2
+hợp_tác {V} 1
+hủy {V} 1
+hứa_hẹn {V} 1
+hữu_dụng {A} 1
+hữu_ích {A} 2
+i3 {Y} 6
+i9300xxdli7 {Y} 1
+ic {Y} 3
+icon {Nb} 632
+ifan {Nb} 3
+ihihi {X} 1
+ilocker {Nb} 1
+im+ {N Nb} 2
+im+Np {Yb} 1
+im {A} 2
+imei {Ny Y Yb} 6
+imel {Y} 1
+inch {Nu} 3
+internet {N Nb} 2
+ios {Np} 12
+ip {Yb} 26
+iphoneNp {N} 2
+is {Vb} 1
+itune {Nb} 1
+ít {A} 1
+j {X} 2
+jack {Nb} 1
+jad {Nb} 1
+jad_any_where {Nb} 1
+jad_biuder {N} 1
+jaf {Y} 4
+java {Nb} 1
+jb {Yb} 2
+jelly {Nb} 1
+k..mik {X} 1
+k {N Nu Y} 16
+kaka {X} 1
+keke {I} 1
+keo {N} 3
+kernel {Nb} 1
+key {Nb} 1
+key_master {Nb} 1
+keyboard {Nb} 1
+keymaster {Nb} 3
+ké {V} 1
+kéo_dài {V} 1
+kha_khá {V} 1
+khai_thác {V} 1
+khác {A} 1
+khách {N} 1
+khe {N} 1
+khe_nối {N} 1
+khen {V} 3
+khi {C N} 61
+khiến {V} 3
+kho {N} 5
+khoảng {L} 1
+khoái {A V} 4
+khỏi {R} 1
+khoản {N} 2
+khoảng {L N R} 13
+khoảng_cách {N} 1
+khu_vực {N} 1
+khung {N} 1
+khung_xương {N} 1
+khuyên {V} 1
+khuyến_cáo {V} 1
+khủng {A} 1
+khà_khà {I} 1
+khá {R} 18
+khác {A} 26
+khác_biệt {A} 2
+khác_nhau {A} 1
+khách {N} 2
+khách_hàng {N} 1
+khái_niệm {N} 1
+khí_hậu {N} 1
+khó {A} 12
+khó_khăn {A N} 3
+khóa {N V} 7
+khôi_phục {V} 214
+không {H P R T V} 158
+không_hiểu {V} 4
+không_thể {V} 3
+khởi_động {V} 1
+khả_năng {N} 2
+khảo_sát {V} 1
+khấu_hao {V} 1
+khẩn_trương {A} 2
+khắc_phục {V} 6
+khắp {A} 1
+khỏe {A} 2
+khỏi {R V} 2
+khối {N} 3
+khởi_động {V} 12
+khủng {A} 3
+kia {L P} 7
+kick {Vb} 1
+kim_cương {N} 2
+kinect {Nb V} 2
+kinh_nghiệm {N} 1
+kiss {Nb} 1
+kiên_nhẫn {A} 1
+kiểm_tra {V} 1
+kiểu {N} 1
+kiểu_dáng {N} 1
+kìa {P} 2
+kiếm {V} 7
+kiểm_tra {V} 1
+kiểu {N Nc} 4
+kiểu_dáng {N} 7
+kl {X} 1
+know {Vb} 1
+kèm {V} 3
+ké {V} 2
+kém {A} 5
+kém_cạnh {V} 1
+kéo {N V} 3
+kêu {V} 5
+kìa {P T} 4
+kí {V} 2
+kĩ {A} 3
+kẻ {Nc} 2
+kết {V} 4
+kết_luận {V} 2
+kết_nối {V} 7
+kết_quả {N} 1
+kể {V} 6
+kể_cả {T} 1
+kịp {A} 3
+kỳ_diệu {A} 1
+kỹ_lưỡng {A} 1
+l {Y} 2
+lag { A Vb} 3
+lan {V} 1
+lao_động {N} 1
+lap {N Nb} 3
+lappy {N} 2
+laptop {N Nb} 2
+laq {X} 1
+laser {Nb} 1
+late {Ab} 1
+launch {Vb} 1
+layout {Nb} 1
+là {V} 23
+làm {V} 6
+lào {N} 1
+lạc {A} 1
+lại {R} 3
+lạnh {A} 1
+leak {Vb} 1
+led {Y Yb} 2
+leezuan07 {Y} 1
+lenovo {N} 9
+lglg {Yb} 2
+light {N} 1
+lightning_keyboard {N Nb} 2
+like {V Vb} 4
+link {Nb} 3
+list {Nb} 1
+liên_hệ {V} 3
+liên_hệ {N V} 5
+liên_lạc {V} 2
+liên_quan {V} 2
+liên_tục {A} 2
+liên_tục {A} 3
+liền {A} 1
+liệt {V} 1
+liệu {V} 1
+lo {V} 1
+loa {N} 2
+loa_ngoài {N} 1
+loa_ngoài {N} 3
+load {Vb} 6
+loay_hoay {A} 1
+lock {Ab Nb Vb} 5
+locked {} 1
+logic {Ab} 1
+lol {F} 1
+long_lanh {A} 1
+long_đong {A} 1
+lookphone {Nb} 1
+loãng {A} 1
+loè_loẹt {A} 1
+loại {N Nc} 12
+ltd_tx {X} 2
+luck {Ab} 2
+lunar {Nb} 1
+lung_linh {A} 7
+luôn {R T} 29
+lúc {N} 6
+là {C V} 207
+làm {V} 58
+làm_sao {H T} 3
+làm_việc {V} 1
+làm_ơn {R T} 2
+lành {A} 2
+lát {N} 2
+lâu {A} 9
+lâu_nay {N} 1
+lần {N} 5
+lên {E R V} 38
+lên_đời {V} 4
+lôi {V} 1
+lỗi_lầm {N} 1
+lùm_xùm {A} 1
+lúc {N} 22
+lý_do {N} 2
+lăn_tăn {A} 1
+lắm {R} 5
+lớn {A} 1
+lưng {N} 1
+lưu {V} 3
+lưu_trữ {V} 1
+lưu_ý {V} 3
+lướt {V} 5
+lạ {A} 13
+lại {E R T} 95
+lấy {T V} 6
+lần {N} 12
+lẫn {C} 4
+lẫn_nhau {R} 1
+lận_đận {A} 1
+lập {V} 1
+lập_trình_viên {N} 3
+lắc {V} 1
+lắm { R} 36
+lắp {V} 3
+lặt_vặt {A} 2
+lẹt_đẹt {A} 1
+lẽ {T} 1
+lẽ_ra {C} 1
+lệnh {N} 1
+lịch {N} 2
+lịch_âm {N} 1
+lồi {A} 1
+lỗ {A} 3
+lỗi {N V} 23
+lỗi_thời {A} 2
+lộ {A} 1
+lộn {A V} 2
+lớn {A} 9
+lớp {N} 1
+lời {N} 2
+lợi_nhuận {N} 1
+lợi_thế {N} 1
+lục {V} 1
+lụm {V} 1
+lựa {V} 2
+lựa_chọn {N} 4
+m {Nu X} 5
+maemo {Np} 5
+mah {Nu} 1
+mai {N} 4
+mail {N Nb} 4
+main {Nb nb} 3
+mainboard {Nb} 1
+maketing {Nb} 1
+manager {Nb} 1
+mang {V} 5
+manual {Nb} 1
+many {Ab} 1
+map {Nb} 3
+maps {N Nb} 3
+market {Nb} 1
+marketing {N} 1
+mau {A R} 4
+max {A} 1
+may {A V} 2
+may_mắn {A} 1
+may_ra {V X} 2
+mà {C T} 15
+màn {N} 1
+màu {N} 1
+màu_mè {A} 1
+máy {N} 4
+máy_tính {N} 1
+mạng {N} 2
+mb {Nu} 2
+mb489rs {Ny} 1
+mb489t {Y} 1
+mb490cz {Ny} 1
+mb496j {Ny} 1
+mb496x {Ny} 1
+mb496zp {Y} 1
+mb500j {Y} 1
+mb500t {Y} 1
+me {P} 1
+meego {Np} 5
+member {Nb} 2
+memo_pad {Nb} 1
+memopad {Nb} 1
+memorybooster {Nb} 1
+memoryflash {Nb} 1
+mentor {Nb} 1
+menu {Nb} 6
+message {V} 1
+messages {Y} 4
+minh {Np} 1
+mini {A N Nb} 629
+miêu_tả {V} 1
+miễn {C} 1
+mình {P} 19
+miếng {N} 1
+miết {A} 1
+miễn_phí {V} 2
+mkv {Y Yb} 4
+mm {Nu} 1
+mobiNp {Yb} 1
+mobifoneNp {Nb} 1
+mobile {Nb} 4
+mobile_networld {N} 1
+mobipocket {Nb} 2
+mobipocket_reader {Nb} 1
+mod {Nb Vb} 2
+mode {Vb} 1
+model {Nb} 11
+moi {V} 1
+mong {V} 8
+mong_chờ {V} 1
+mong_muốn {N} 2
+mount {Nb} 2
+move {Vb} 1
+mọi {L} 1
+mp {Nu Y} 2
+mp4 {N} 2
+mua {V} 78
+muti_alam_pro {N} 1
+muốn {V} 5
+muốn {R V} 24
+muộn {A} 1
+mw3 {Y} 1
+mx {Nu} 1
+my {P Pb} 8
+my_notes {Nb} 5
+mà {C R T V} 158
+màn_hình {N} 1
+màn {N} 12
+màn_hình {N} 29
+màu {N} 14
+màu_sắc {N} 2
+mác {N} 1
+mát {A} 1
+máu {N X} 4
+máy {M N Nc V} 106
+máy_tính {N} 8
+máy_xách_tay {N} 1
+máy_ảnh {N} 2
+mất {T} 2
+mất_công {V} 1
+mấy {L} 5
+mã {N} 2
+mãi {R} 6
+mè {N} 1
+mèn_ơi {I} 1
+mệt {A} 10
+mình {C N P} 181
+mí {V} 2
+móc {V} 1
+móc_túi {V} 1
+món_đồ {N} 1
+môi_trường {N} 2
+mông {N} 1
+mỗi {L} 1
+một {M} 1
+múa_may {V} 1
+mặt_trời {N} 1
+mới {A R} 4
+mở {V} 1
+mưa {V} 1
+mươi {M} 2
+mướt {A} 1
+mướt_mát {A} 1
+mượn {V} 3
+mượt {A} 3
+mượt_mà {A} 2
+mạ {V} 1
+mạn_phép {A} 1
+mạng {N V} 13
+mạng_mẽo {N} 1
+mạnh {A} 8
+mạnh_mẽ {A} 3
+mảnh_mai {A} 1
+mất {T V} 16
+mấy {H L R T} 36
+mần {V} 1
+mẫu {N} 1
+mẫu_mã {N} 1
+mắc {A} 2
+mắt {A N} 5
+mặc_dù {C} 3
+mặc_định {A N V} 5
+mặn_mà {A} 1
+mặt {N} 4
+mặt_trăng {N} 1
+mặt_trời {N} 1
+mẹ {N} 1
+mềm {A} 5
+mệt {A} 2
+mọi {L} 12
+mọi_người {N} 3
+mỏi {A} 2
+mỏng {A} 4
+mốt {M} 1
+mỗi {L T} 16
+mộ {N} 3
+một {L M m} 28
+một_chút {L} 3
+một_lúc {N} 1
+một_lúc_sau {N} 6
+một_số {L} 7
+một_ít {L} 6
+mới {A C E R T} 67
+mới_mẻ {A} 2
+mờ_nhạt {A} 1
+mời {V} 4
+mở {V} 15
+mở_rộng {V} 1
+mỡ {N} 1
+mợ {X} 2
+mục {Nc} 1
+mụn {N} 1
+mức {N} 2
+mức_độ {N} 1
+mừng {A} 6
+n {X} 2
+n4010 {Y} 14
+na_ná {A} 1
+nam {N Np} 3
+nam_tính {A} 147
+nandroid {Nb} 1
+nano {Nb} 1
+nao {P} 1
+navi {Nb} 1
+nay {L N P} 5
+nào {P} 8
+này {L P} 10
+nerd {Nb} 1
+new {Ab} 1
+newmember16 {Np} 1
+nfs {Y} 4
+ngang {A} 1
+ngang_ngửa {A} 1
+ngay {R T} 6
+ngay_cả {T} 1
+ngay_lập_tức {A} 1
+ngay_tức_khắc {R} 1
+ngày {N} 2
+nghe {V} 51
+nghe_ngóng {V} 1
+nghèo {A} 1
+nghía {V} 1
+nghĩ {V} 2
+nghành {N} 6
+nghĩ {V} 5
+nghỉ {V} 3
+nghịch {V} 2
+ngoan {A} 2
+ngoài {E} 2
+ngon {A} 11
+ngon_lành {A} 2
+ngoài {A E N} 8
+ngoại_hình {N} 1
+ngu {A} 4
+nguy_hiểm {A} 4
+nguyên {A} 2
+nguồn {N} 4
+ngày {N} 13
+ngày_nay {N} 1
+ngày_tàn {N} 1
+ngày_xưa {N} 2
+ngó {V} 1
+ngôi {N} 1
+ngôn_ngữ {N} 1
+ngồ_ngộ {A} 1
+ngồi {V} 1
+ngõ_ngách {N} 1
+người {N} 1
+người_dùng {N} 1
+người_người {N} 9
+người {N} 30
+người_dân {N} 1
+người_dùng {N} 12
+người_sử_dụng {N} 1
+người_ta {N P} 5
+người_tiêu_dùng {N} 7
+ngược {A} 2
+ngược_lại {A} 1
+ngược_sáng {A} 1
+ngại {V} 1
+ngầu {A} 1
+ngắm_nhìn {V} 1
+ngắn_ngủn {A} 2
+ngỏm {V} 1
+ngốn {V} 1
+ngộ {A} 1
+ngụy_biện {V} 1
+ngửa {A} 1
+nha {T} 12
+nhac {N} 1
+nhanh {A N} 21
+nhanh_nhẹ {A} 1
+nhau {N} 6
+nhà {N} 4
+nhà_nhà {N} 1
+nhá {T} 1
+nháy {V} 1
+nhạc {N} 3
+nhé {T} 1
+nhẹ {A} 2
+nhiều {A} 1
+nhìn {V} 3
+nhỉ {T} 5
+nhiều {A R T} 71
+nhiệm {N} 3
+nhiệt_tình {A} 1
+nhiệt_đới {N} 1
+nhỏ {A} 1
+nhu_cầu {N} 5
+nhu_cầu {N} 3
+nhà {N} 9
+nhà_phát_triển {N} 1
+nhà_phân_phối {N} 1
+nhà_sản_xuất {N} 1
+nhàm_chán {A} 1
+nhá {T} 3
+nhân {N} 1
+nhân_viên {N} 1
+nhân_vật {N} 1
+nhất {R} 5
+nhận {V} 7
+nhé {T} 50
+nhìn {V} 33
+nhúng {V} 2
+nhắn {V} 3
+như {C E T} 75
+nhưng {C} 102
+những {L R} 7
+nhược_điểm {N} 31
+nhạc {N} 23
+nhạy {A N} 11
+nhảm {A} 1
+nhảm_nhí {A} 1
+nhảy {V} 1
+nhấn {V} 3
+nhất {A X} 24
+nhầm {V} 3
+nhận {V} 8
+nhận_thấy {V} 2
+nhận_xét {N V} 2
+nhập {V} 3
+nhật {N} 6
+nhật_ký {N} 1
+nhắc {V} 1
+nhắm {V} 1
+nhắn {N} 4
+nhẹ {A} 4
+nhẹ_nhàng {A} 1
+nhề {T} 4
+nhỉ {I T} 34
+nhỏ {A} 9
+nhỏ_nhỏ {A} 1
+nhớ {T V} 7
+nhờ {V X} 10
+những {L} 19
+nhựa {N} 3
+nick {Nb} 1
+ninja {Nb} 1
+nitifications {Nb} 1
+nokia {Nb Np} 26
+not {Rb} 2
+note {Nb} 1
+notepad {Nb} 1
+nova {Nb} 1
+nó {P} 8
+nói {V} 4
+nphuong {X} 1
+number {Nb} 6
+nút {N} 2
+nuột_nà {A} 2
+nào {P T p} 87
+này {P T} 115
+nát {A} 1
+nâng_cao {A} 1
+nâng_cấp {V} 1
+nâng_niu {V} 1
+nâu {A} 3
+nè {P T} 7
+ném {V} 1
+nét {A N} 4
+nên {C E R} 88
+nêu {V} 1
+nếu {C} 4
+nó {P p} 92
+nói {V} 36
+nói_chung {X} 3
+nóng {A} 3
+nôn_nóng {A} 1
+nút {N} 8
+năm {M N} 9
+nằm {V} 1
+nặng {A} 1
+nơi {N} 2
+nữa {R T} 5
+nước {N} 2
+nước_ngoài {N} 1
+nạc {N} 3
+nấy {P} 1
+nắng {A} 1
+nắp_lưng {N} 2
+nằm {V} 1
+nặng {A} 3
+nặng_đô {A} 1
+nếu {C R} 31
+nền {N} 3
+nền_tảng {N} 5
+nọ {P} 2
+nốt_nhạc {N} 1
+nổ {V} 1
+nổi {R} 1
+nổi_bật {A} 2
+nổi_lên {V} 1
+nổi_tiếng {A} 1
+nổi_trội {A} 1
+nỗi {N} 1
+nội {X} 1
+nợ {N} 2
+nửa {M} 2
+nữ {N} 3
+nữ_giới {N} 1
+nữ_tính {A} 10
+nữa {R T} 37
+o {Y} 1
+oài {X} 1
+odex {Nb} 3
+office {Nb} 1
+officer {Yb} 2
+offline {Vb} 1
+oh {X} 3
+ok {A Ab} 23
+ola {Np} 1
+old {Ab} 1
+on {Eb} 1
+one_x {Nb} 4
+online {N Nb Vb} 4
+open {Vb} 1
+opera {Nb Np} 11
+opera_mini {Nb} 1
+operamini {Nb Np} 7
+operamobile {Nb} 4
+opition_plus {Nb} 1
+option+ {N Nb} 2
+option {N} 1
+option_plus {Nb} 1
+options {Nb} 1
+or {Cb} 3
+orekasep_calendar {Nb} 1
+orekasep_connected {Nb} 2
+os {Yb} 2
+ota {Y} 1
+out {Vb} 1
+output {Nb} 1
+outsource {Nb} 2
+oài {T} 1
+p {Nu} 4
+p11 {Y} 4
+p7 {Np Y} 6
+p7_brown {Np} 3
+palm {Nb Np} 8
+paml {Np} 2
+partition {Nb} 2
+password {Nb} 4
+patch {Vb} 3
+pause {Vb} 1
+pb_taskmanager {Nb} 1
+pc {N Y Yb} 7
+pdf {N} 1
+phan_xích_long {Np} 1
+phán {V} 1
+phát_triển {N} 1
+phải {T V} 5
+phải_chi {X} 1
+phim {A N} 8
+phiên_bản {N} 3
+phiên_bản {N} 5
+phiêu {A} 1
+phí {N} 2
+phoenix {Np} 3
+phone {Nb} 3
+phong_cách {A N} 10
+phong_phú {A} 1
+phút {Nu} 1
+phụ_kiện {N} 1
+pháo {N} 1
+pháp {Np} 1
+phát {Nc V} 2
+phát_biểu {V} 2
+phát_hiện {V} 1
+phát_triển {V} 6
+phân_công {V} 1
+phân_phối {V} 1
+phân_vân {V} 1
+phần {N} 1
+phần_mềm {N} 1
+phê {A} 4
+phết {T} 1
+phí {N} 1
+phía {N} 6
+phím {N} 14
+phím_tắt {N} 1
+phòng> {Np} 1
+phóng {V} 1
+phù_hợp {A} 10
+phút {N Nu} 20
+phải {A R T V} 77
+phải_chăng {A} 1
+phản {V} 1
+phản_đối {V} 1
+phản_ứng {V} 2
+phầm_mềm {N} 10
+phần_cứng {N} 7
+phẩm {N} 1
+phết {T} 1
+phễu {N} 1
+phối {V} 1
+phồng {V} 1
+phổ_biến {A} 6
+phổ_thông {A} 3
+phụ_kiện {N} 2
+phụ_lòng {V} 1
+phụ_nữ {N} 1
+pin {N Nb P} 39
+pixi {Nb} 1
+plash {Vb} 1
+play {VB Vb} 5
+player_for_yourtobe {N} 1
+plus {Vb} 1
+pm {Vb Y} 3
+popup {Nb} 1
+post {Vb} 6
+pp {X} 1
+prc {Y} 2
+preference {Nb} 1
+preferences {Nb} 1
+press {Vb} 4
+pro {Ab N Y Yb} 11
+profile {Nb} 2
+pushmail {Nb Vb} 2
+px {Nu} 2
+qickwheel {Nb} 3
+qua {E P R V} 35
+quan_trọng {A} 4
+quan_trọng {A N} 5
+quan_tâm {V} 6
+quan_điểm {N} 2
+quay {V} 10
+quay_lưng {V} 1
+quay_lại {V} 1
+quài {T} 1
+quá {R} 3
+quen {A V} 4
+quick {Ab} 1
+quick_wheel {N Nb} 2
+quickwell {Nb} 1
+quickwheel {Nb} 7
+quote {N Nb Vb} 4
+quy_định {N} 1
+quý {A} 1
+quyết_tâm {V} 1
+quyết_định {N V} 2
+quà {N} 6
+quá {A R T} 67
+quá_khứ {N} 2
+quá_trình {N} 1
+quá_trời {R} 1
+quán {N} 1
+quận {N} 2
+quên {V} 1
+quốc_tế {N} 2
+quý_phái {A} 3
+quạt {N} 3
+quản_lý {V} 2
+quảng_cáo {N} 1
+quần {N} 1
+quốc_tế {N} 4
+qw {Y} 1
+qwerty_remocon {Nb} 1
+r {X Y} 4
+ra {R V} 57
+ra_mắt {V} 2
+radio {Nb} 1
+radio_on {Nb} 4
+radioon {Nb} 1
+ram {N Nb Y Yb} 10
+ramblow {Nb} 2
+rar {Nb} 1
+rành {V} 1
+rảnh {A} 1
+reader {Nb} 2
+recovery {Nb Vb} 3
+remote {Ab} 1
+repeat {Vb} 1
+reply {Vb} 1
+report {Vb} 1
+reset {V Vb} 6
+restart_me {Nb} 1
+review {Nb Vb} 5
+rinh {V} 1
+riêng {A} 5
+riêng_biệt {A} 1
+rom {N Nb Y Yb nB} 31
+room {Nb} 1
+root {Nb V Vb} 6
+roài {R} 1
+rõ {A} 1
+rung {V} 3
+russiaNp {N} 1
+rác {N} 4
+ráng {V} 2
+rất {R} 3
+rè {A} 1
+rò_rỉ {A} 1
+rồi {C R T} 9
+rối {A} 2
+rõ {A} 7
+rõ_ràng {A} 4
+rõ_rệt {A} 1
+rùi {R T} 5
+rút {V} 2
+răng {N} 1
+rơi {V} 1
+rước {V} 1
+rượu {N} 2
+rảnh {A} 3
+rất {R} 48
+rằng {T} 2
+rẻ {A} 7
+rẻ_bèo {A} 1
+rối {A} 5
+rối_mắt {A} 1
+rối_rắm {A} 25
+rồi {C R T} 93
+rỗ_chỗ {A} 1
+rộng {A} 1
+rớt {V} 2
+rực_rỡ {A} 2
+s {Nu X} 14
+s60v5 {Y} 1
+safebox {Nb} 1
+sai {A} 3
+sai_lầm {N} 5
+samoled {Np} 1
+samsung {Nb} 12
+samsungNp {N} 1
+samsungcamera.apk {Nb} 1
+samsungcamera.odex {Nb} 1
+sang {A E R V} 11
+sang_trọng {A} 10
+sao {P T} 47
+sau {A E N P R} 28
+sau_này {P} 1
+sau_đó {N P} 2
+save {Vb} 1
+say_sưa {V} 1
+sài {V} 1
+sáng {A N} 2
+sạc {N} 2
+sb {Y} 2
+screen {Nb} 2
+script {Nb} 1
+sd {N Y} 2
+se {Y} 1
+search {Vb} 4
+secgallery2.apk {Nb} 1
+secgallery2.odex {Nb} 1
+seiral {Nb} 1
+send {Vb} 1
+sent {Vb} 8
+serial {Nb} 6
+service {Nb} 1
+services {Nb} 1
+set {Vb} 1
+set_up {Vb} 1
+setings-&gt {Nb} 1
+setings {Nb} 1
+setting {N Nb} 4
+settings {Nb} 1
+sever {Nb} 1
+sẽ {R} 7
+share {Vb} 3
+ship {Nb Vb} 4
+shop {N} 1
+shortcut {N} 1
+show {Vb} 1
+sim {N Nb nb} 9
+sinh {V} 2
+sinh_thái {N} 2
+sinh_viên {N} 1
+sinh_động {A} 1
+site {Nb} 1
+sky {Nb} 1
+smart {Ab} 1
+smartcalling {Nb} 1
+smartmail {Nb} 1
+smartphone {Nb} 1
+smatphone {Nb} 1
+smooth {Ab} 1
+sms {N} 4
+sms_viewer {Nb} 3
+so {V} 14
+so_sánh {V} 1
+so_sánh {V} 5
+socbay_imedia {Nb} 1
+socket {Nb} 2
+soft {Nb Yb} 10
+something {Pb} 1
+song_hành {V} 1
+sonlazio {Np} 3
+sóng {N} 1
+spam {Vb} 3
+ss {Y} 8
+ssd {N} 2
+start_me_up {N} 1
+status {Nb} 1
+stereo {Nb} 1
+stock {Nb Vb} 4
+stom {N} 1
+stone {Nb} 1
+storm {N Nb} 2
+suitable {Ab} 1
+sung_sướng {A} 1
+suy_nghĩ {V} 1
+sụt {V} 1
+suốt {E R} 4
+symbian-developers.net {N} 9
+sync-file-connection {N} 1
+system {Nb Np Y Yb} 7
+sài {V} 2
+sàn {N} 1
+sách {N} 1
+sáng {A N} 6
+sáng_nay {N} 1
+sáng_sủa {A} 1
+sát_thủ {N} 1
+sâm {Np} 1
+sâu_xa {A} 2
+sên {N} 1
+sóng {N} 3
+sắm {V} 1
+sắp {R} 1
+sẵn_lòng {A} 1
+sđt {Y} 1
+sơn {Np} 2
+sưu_tầm {V} 1
+sưu_tập {V} 1
+sướng {A} 1
+sướng {A} 5
+sườn {N} 1
+sạc {N} 5
+sạc_dây {N} 1
+sạch {A} 2
+sạch_sành_sanh {A} 4
+sản_phẩm {N} 7
+sản_xuất {V} 3
+sắc_nét {A} 4
+sắp {R} 6
+sắp_sửa {R} 1
+sắt {N} 1
+sẵn {A} 2
+sẵn_sàng {A V} 2
+sẽ {R} 26
+số {N} 8
+số_lượng {N} 1
+số_phận {N} 2
+sốc {V} 1
+sống {V} 3
+sổ {N} 1
+sớm {A} 4
+sờ {V} 4
+sờ_đầu {V} 1
+sở_hữu {V} 4
+sợ {V} 9
+sụt {V} 1
+sức_hút {N} 1
+sử_dụng {A N V} 24
+sửa {V} 1
+sự {N Nc} 7
+t {X} 4
+t6 {Y} 1
+t61 {Y} 1
+t9 {Y} 1
+ta {N P T} 7
+tablet {Nb} 626
+tai {N} 1
+tai_nghe {N} 5
+tay {N} 14
+tài_khoản {N} 2
+tải {V} 2
+tạo {V} 1
+tcp {Y} 2
+template {Nb} 1
+tedut_menu {Nb} 2
+tem {N} 2
+test {Vb} 12
+texpics {Nb} 1
+text {Nb} 1
+tg {Y} 1
+thah {N} 1
+tham {A} 1
+tham_gia {V} 2
+tham_khảo {V} 4
+thanh {N} 1
+thank {Vb} 9
+thanks {V Vb} 13
+thao_tác {N V} 4
+that {Pb} 2
+thay {V} 18
+thay_thế {V} 3
+thay_đổi {V} 4
+thành {R} 1
+tháo {V} 1
+thảm_họa {N} 1
+the {X} 1
+them_blue {Nb} 2
+theme {N Nb} 9
+themes {Nb} 2
+theo {E V} 19
+theo_dõi {V} 1
+thethidie {X} 1
+thẻ_nhớ {N} 1
+thi {V X} 2
+thi_thoảng {T} 2
+thiết_yếu {A} 2
+thì {C} 26
+thích {V} 2
+thỉnh_thoảng {N} 2
+thiết_kế {N V} 13
+thiếu {A V} 6
+thiếu_sáng {A} 1
+thiếu_sót {N} 2
+thiệt {T} 1
+thoái_hóa {A} 1
+thoát {V} 1
+thoại {N} 6
+thoải_mái {A} 1
+thread {Nb} 1
+thu {V} 1
+thu_nhập {V} 1
+thua {V} 3
+thui {T} 3
+thuyên_chuyển {V} 1
+thuyết_phục {V} 1
+thuê {V} 2
+thú_vị {A} 1
+thuận {A} 1
+thuốc {N} 1
+thà {T} 2
+thành {R V} 5
+thành_công {A N V} 3
+thành_viên {N} 2
+tháng {N} 12
+tháo {V} 8
+tháo_lắp {V} 1
+thân {T} 2
+thất_vọng {A} 1
+thấy {V} 4
+thèm {V} 2
+thèm_thuồng {V} 1
+thê_thảm {A} 2
+thêm {R V} 25
+thế {P T X} 6
+thế_nào {P} 2
+thế_này {P} 10
+thì {C} 210
+thích {V} 21
+thích_hợp {A} 9
+thôi {T V} 56
+thông_báo {N V} 5
+thông_cảm {V} 1
+thông_minh {A} 2
+thông_số {N} 1
+thông_thường {A} 1
+thông_tin {N} 9
+thù {N} 1
+thùng_rác {N} 1
+thú_vị {A} 2
+thơm {A} 2
+thời_gian {N} 1
+thư_viện {N} 1
+thưa {V} 1
+thương_hiệu {N} 4
+thương_trường {N} 1
+thừa {V} 1
+thử {V} 4
+thường {A} 5
+thấm {V} 1
+thấp {A} 2
+thất_vọng {A} 3
+thấy {V} 78
+thật {A T} 17
+thật_ra {C} 1
+thật_sự {A} 3
+thắc_mắc {V} 1
+thằng {Nc P} 6
+thẳng {A} 2
+thẻ {N} 2
+thẻ_nhớ {N} 6
+thế {P T} 32
+thế_mạnh {N} 2
+thế_nào {N P T} 16
+thế_này {P} 3
+thề {V} 1
+thể_loại {N} 1
+thỉnh_thoảng {N} 1
+thị_phần {N} 1
+thị_trường {N} 2
+thịnh {A} 1
+thớt {N} 1
+thời {N} 1
+thời_buổi {N} 3
+thời_gian {N} 12
+thời_lượng {N} 3
+thời_tiết {N} 1
+thời_điểm {N} 2
+thứ {N} 10
+thứ_3 {N} 1
+thức {V} 1
+thừa_nhận {V} 3
+thử {V} 25
+thử_nghiệm {V} 1
+thực_chất {N} 1
+thực_sự {A T} 6
+thực_thi {V} 1
+thực_tế {N} 3
+tigertalking {N} 1
+time {nb} 3
+tin {N V} 2
+tin_nhắn {N} 5
+tin_tức {N} 2
+tin_vịt {N} 1
+tin_yêu {V} 1
+tinh_chỉnh {V} 13
+tivi {N} 3
+tiêu {V} 2
+tiêu_đề {N} 1
+tiền {N} 3
+tìm {T V} 2
+tìm_hiểu {V} 1
+tính {V} 1
+tính_năng {N} 3
+tiếc {V} 1
+tiến {V} 1
+tiến_bộ {V} 1
+tiến_hành {V} 1
+tiến_triển {V} 1
+tiếng {N Nu} 6
+tiếng_việt {N} 1
+tiếp_cận {V} 1
+tiếp_theo {V} 1
+tiết_kiệm {V} 5
+tiền {N} 17
+tiệm {N} 2
+tiện {A} 4
+tiện_dụng {A} 1
+tiện_lợi {A} 5
+to {A E Eb} 18
+to_tướng {A} 1
+toàn {L} 1
+too {Rb} 1
+top {Nb} 4
+topcover {Nb} 3
+topic {N Nb} 9
+touch {Nb Vb} 2
+toucpad {Nb} 1
+touchpad {Nb} 1
+toàn {N P R} 9
+toàn_bộ {N} 1
+tp {Y} 3
+tra {V} 2
+trang {N} 3
+trang_chủ {N} 1
+trái {N} 1
+treo {V} 8
+treo_máy {V} 1
+tri_thức {N} 12
+triệu {Nu M} 3
+trong {A E N R} 36
+trong_khi {C N} 4
+trong_suốt {A} 1
+trung {A} 1
+trung_bình {N} 1
+trung_gian {N} 1
+trung_tâm {N} 1
+trách {V} 1
+trâu_bò {A N} 5
+trên {E N P R} 63
+trình {N} 2
+trình_duyệt {N} 6
+trò {N} 2
+trông {R V} 7
+trăm {M} 2
+trở_lại {V} 1
+trưa {N} 1
+trượt {V} 10
+trước {A E N P} 21
+trước_hết {N} 1
+trước_đây {N} 1
+trường {N} 1
+trường_hợp {N} 3
+trạm {N} 1
+trạng_thái {N} 1
+trả {V} 1
+trả_lời {V} 3
+trải_nghiệm {N V} 6
+trận {N} 2
+trắng {A} 4
+trọn_vẹn {A} 1
+trống {A} 1
+trời {I N T} 8
+trở {V} 3
+trở_lên {A} 1
+trở_lại {V} 1
+trở_thành {V} 1
+trục_trặc {A} 1
+trừ_phi {E} 1
+trực_tiếp {A} 2
+trực_tuyến {N} 1
+tui {P} 5
+tuy {C} 5
+tuy_nhiên {C} 5
+tuyên_bố {V} 2
+tuyệt {A} 8
+tuyệt_vời {A} 5
+tùy {V} 1
+tụt {V} 1
+tuần {N} 3
+tuổi_thọ {N} 1
+tuỳ {V} 1
+tv {Yb} 3
+typing {Vb} 1
+tào_lao {A} 1
+tàu_khựa {Np} 1
+tác_vụ {V} 1
+tái {A} 1
+táo_bạo {A} 1
+tấm {Nc} 2
+tất_cả {L} 1
+tèo {L} 1
+tê {A} 1
+tên {N} 4
+tên_lửa {N} 2
+tì_vết {N} 1
+tìm {V} 6
+tìm_hiểu {V} 3
+tìm_kiếm {V} 1
+tìm_tòi {V} 1
+tình_cờ {A} 1
+tình_hình {N} 3
+tình_trạng {N} 2
+tí {L R} 4
+tích {V} 1
+tích_hợp {V} 3
+tính {N V} 7
+tính_năng {N} 17
+tít_mù {A} 1
+tóm {V} 1
+tóm_lại {V} 9
+tôi {P} 13
+tốn {V} 2
+tốt {A} 2
+tùm_lum {A} 1
+tùy {V} 7
+túi {N} 1
+túi_tiền {N} 2
+tý {L R} 2
+tăng {V} 3
+tớ {P} 1
+tới {E V} 4
+tư_vấn {V} 4
+tương {V} 1
+tương_lai {N} 1
+tương_thích {V} 1
+tương_tự {A} 3
+tương_đối {A} 4
+tương_ứng {V} 1
+từ {E} 2
+tự {P} 1
+tự_nhiên {N} 2
+... {...} 1
+- {-} 1
+" {"} 1
+! {!} 1
+; {;} 1
+theunknownword {Np Nc Nu Nb Ny Yb Md N V A P L M R E F C I T B Y S X} 1

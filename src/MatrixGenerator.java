@@ -1,16 +1,46 @@
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
 public class MatrixGenerator {
 	private Map<String, String[]> lexicon;
-	private Map<String, Integer> freq;
 	private String[] tagset;
-	private String trainingFile = "mergeFile.txt";
+	private String trainingFile = "newData.txt";
 	
-	public MatrixGenerator(Map<String, String[]> lexicon, String[] tagset) {
-		this.lexicon = lexicon;
-		this.tagset = tagset;
+	public MatrixGenerator() {
+		initData();	
+	}
+	
+	private void readLexicon(){
+		FileInteraction file = new FileInteraction("newDict.txt");
+		try{
+			file.openInputFile();
+			
+			while(file.hasNext()){
+				String line = file.readLine();
+				String res[] = line.split("[ {}]+");
+				String[] tag = new String[res.length-1];
+				for(int i = 1; i < res.length; i++)
+					tag[i-1] = res[i];
+				
+				lexicon.put(res[0], tag);
+			}
+			
+			file.closeInputFile();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+	
+	private void initData() {
+	    lexicon = new HashMap<String, String[]>();
+	    
+	    readLexicon();
+	    
+	    String tagsetString = "Np Nc Nu Nb Ny Yb Md N V A P L M R E F C I T B Y S X H ! \" ' ( ) *  + , - _ . / : ; ? ...";
+	    tagset = tagsetString.split(" ");
 	}
 	
 	public HashMap<String, Double> createMatrixB(){
@@ -18,14 +48,16 @@ public class MatrixGenerator {
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		HashMap<String, Integer> C = new HashMap<String, Integer>();
 		
-		for(int i = 0; i < l.length; i++){
-			String tags[] = lexicon.get(l[i]);
-			for(int j = 0; j < tags.length; j++)
-				result.put(l[i] + " " + tags[j], 0.0);
-		}
-		
 		for(int i = 0; i < tagset.length; i++)
 			C.put(tagset[i], 0);
+		
+		for(int i = 0; i < l.length; i++){
+			String tags[] = lexicon.get(l[i]);
+			for(int j = 0; j < tags.length; j++){
+				result.put(l[i] + " " + tags[j], 0.0);
+				if(C.get(tags[j]) == null) C.put(tags[j], 0);
+			}
+		}
 			
 		FileInteraction file = new FileInteraction(trainingFile);
 		
@@ -35,10 +67,13 @@ public class MatrixGenerator {
 			while(file.hasNext()){
 				String[] line = file.readLine().split("[ ]+");
 				for(int i = 0; i < line.length; i++){
-					String[] temp = line[i].split("[/]+");
-					if(temp.length < 2) continue;
-					String key = temp[0] + " " + temp[1];
+					int pos = line[i].lastIndexOf("/");
+					if(pos == -1) continue;
+					String[] temp = new String[2];
+					temp[0] = line[i].substring(0, pos);
+					temp[1] = line[i].substring(pos+1);
 					
+					String key = temp[0] + " " + temp[1];
 					if(result.get(key) == null)
 						result.put(key, 1.0);
 					else result.put(key, result.get(key) + 1.0);
@@ -53,7 +88,6 @@ public class MatrixGenerator {
 			
 			for (int j = 0; j < l.length; j++) {
 				String[] tags = lexicon.get(l[j]);
-				
 			    for (int k = 0; k < tags.length; k++) {
 			    	double a = result.get(l[j] + " " + tags[k]) + 0.5;
 			        double b = C.get(tags[k]) + posibleWT*0.5;
@@ -62,6 +96,12 @@ public class MatrixGenerator {
 			}
 			
 			file.closeInputFile();
+			
+	        FileOutputStream fos = new FileOutputStream("emission.map");
+	        ObjectOutputStream oos = new ObjectOutputStream(fos);
+	        oos.writeObject(result);
+	        oos.close();        
+			
 		}catch(IOException e){
 			e.printStackTrace();
 		}
@@ -69,16 +109,9 @@ public class MatrixGenerator {
 		return result;
 	}
 	
-	int getFreq(String string){
-		if (freq.containsKey(string)) return freq.get(string);
-		return 0;
-	}
-	
 	public double[][] createMatrixA(){
 		FileInteraction file = new FileInteraction(trainingFile);
-
 		double epsilon = 0.00005;
-		
 		String[] tagSet = new String[tagset.length];
 		
 		for(int i = 0; i < tagset.length; i ++)
@@ -122,11 +155,13 @@ public class MatrixGenerator {
 				}
 				System.out.println();
 			}
-			/*
-			for(int i = 0 ; i < tagset.length ; i++){
-				System.out.println(totalTag[i]+" " + tagset[i]);
-			}*/
 			file.closeInputFile();
+			
+			FileOutputStream fos = new FileOutputStream("transmission.array");
+	        ObjectOutputStream oos = new ObjectOutputStream(fos);
+	        oos.writeObject(res);
+	        oos.close();
+	        
 		}catch(IOException e){
 			e.printStackTrace();
 		}
@@ -136,7 +171,14 @@ public class MatrixGenerator {
 	private int getTagIndex(String string){
 		int res = 0;
     	for(int i = 0; i < tagset.length; i++)
-    		if(string.contains("/" + tagset[i])) res = i;
+    		if(string.endsWith("/" + tagset[i])) res = i;
     	return res;
     }
+	
+	public static void main(String[] args){
+		MatrixGenerator mg = new MatrixGenerator();
+		mg.createMatrixA();
+		mg.createMatrixB();
+		System.out.print("Done!");
+	}
 }

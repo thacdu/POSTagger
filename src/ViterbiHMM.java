@@ -1,4 +1,6 @@
 
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,15 +16,35 @@ public class ViterbiHMM{
     
     private double[][] A;
     private HashMap<String, Double> B;
+    //Regular expression
+    String phoneNumber = "(\\+84)?\\d\\d\\d([-,.])?\\d\\d\\d\\d";                    //biểu diễn số điện thoại cố định
+    String mobileNumber = "(\\+84)?\\d\\d\\d([-,.])?\\d\\d\\d([-,.])?\\d\\d\\d\\d"; //biểu diễn số di động
+    String date = "\\d?\\d[\\/,\\-]\\d?\\d[\\/,\\-]?\\d?\\d?\\d?\\d?";  
+    String email = "\\w+\\@\\w+\\.\\w+\\.?\\w+";
+    String number = "\\-?\\d+\\.?(\\d+)?";
     
     public ViterbiHMM(String tagSet, String obsA,
             Map<String, String[]> lexicon) {
     	this.hiddenAlphabet = tagSet.split(" ");
     	this.observableAlphabet = obsA.split(" ");
         this.lexicon = lexicon;
-        MatrixGenerator gen = new MatrixGenerator(lexicon, hiddenAlphabet);
-        this.A = gen.createMatrixA();
-        this.B = gen.createMatrixB();
+        getData();
+    }
+    
+    private void getData(){
+    	try{
+    		FileInputStream fis = new FileInputStream("transmission.array");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            A = (double[][]) ois.readObject();
+            ois.close();
+    		
+        	fis = new FileInputStream("emission.map");
+            ois = new ObjectInputStream(fis);
+            B = (HashMap<String, Double>) ois.readObject();
+            ois.close();
+        }catch(Exception e){
+        	e.printStackTrace();
+        }
     }
     
     public String mostProbableSequence(String input) {
@@ -31,7 +53,6 @@ public class ViterbiHMM{
         
         init();
         induct();
-        
         //System.out.println("Delta:");
         //ViterbiMatrixTools.printMatrix(delta);
         //System.out.println();
@@ -46,6 +67,9 @@ public class ViterbiHMM{
     }
     
     private void init() {
+    	for(int i = 0; i < observation.length; i++)
+    		observation[i] = observation[i].toLowerCase();
+    	
         delta = new double[hiddenAlphabet.length][observation.length];
         
         for (int i = 0; i < delta.length; i ++) {
@@ -64,19 +88,32 @@ public class ViterbiHMM{
     private void induct() {
         for (int i = 1; i < observation.length; i++) {
         	String obs = observation[i];
-        	String[] tags = lexicon.get(obs);
+        	String[] tags = lexicon.get(obs); 		
         	if(tags == null){
+        		if(obs.matches(mobileNumber) || obs.matches(phoneNumber)){
+        			tags = new String[1];
+        			tags[0] = "M";
+                }else if(obs.matches(date)){
+                	tags = new String[1];
+        			tags[0] = "M";
+                }else if(obs.matches(email)){
+                	tags = new String[1];
+        			tags[0] = "Np";
+                }else if(obs.matches(number)){
+                	tags = new String[1];
+        			tags[0] = "M";
+                }else{
+                	obs = observableAlphabet[observableAlphabet.length - 1];
+        			tags = lexicon.get(obs);
+                }
         		obs = observableAlphabet[observableAlphabet.length - 1];
-        		tags = lexicon.get(obs);
         	}
         	
-            for (int j = 0; j < tags.length; j++) {
+        	for (int j = 0; j < tags.length; j++) {
                 double emisValue = B.get(obs + " " + tags[j]);
                 int tagIndex = getTagIndex(tags[j]);
-                
                 for(int k = 0; k < hiddenAlphabet.length; k++){
                 	double res = delta[k][i-1] + emisValue + Math.log(A[k][tagIndex]);
-                	
 	                if (res > delta[tagIndex][i]){
 	                	delta[tagIndex][i] = res;
 	                    psi[tagIndex][i - 1] = k;
@@ -90,7 +127,10 @@ public class ViterbiHMM{
         String[] resultArray = new String[psi[0].length];
         int lastIndexInPsi = ViterbiMatrixTools.indexOfMaximimumForCol(
                 delta[0].length - 1, delta);
-
+        //for(int i = 0; i < observation.length-1; i++)
+        	//System.out.print(observation[i] + " ");
+        //System.out.println();
+        //System.out.println(lastIndexInPsi);
         int lastValueInPsi = psi[lastIndexInPsi][psi[0].length - 1];
         String lastTag = hiddenAlphabet[lastIndexInPsi];
         resultArray[resultArray.length - 1] = lastTag;
